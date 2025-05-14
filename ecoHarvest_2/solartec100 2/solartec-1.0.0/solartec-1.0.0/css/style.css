@@ -587,17 +587,10 @@
 # About Section
 --------------------------------------------------------------*/
 .about h2 {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 700;
   font-family: var(--font-secondary);
-  margin: 30px 0;
-}
-
-@media (min-width: 991px) {
-  .about h2 {
-    max-width: 65%;
-    margin: 0 0 80px 0;
-  }
+  margin: 26px 0;
 }
 
 .about .our-story {
@@ -643,23 +636,6 @@
 .about ul i {
   font-size: 20px;
   margin-right: 4px;
-  color: var(--color-primary);
-}
-
-.about .watch-video i {
-  font-size: 32px;
-  transition: 0.3s;
-  color: var(--color-primary);
-}
-
-.about .watch-video a {
-  font-weight: 600;
-  color: var(--color-secondary);
-  margin-left: 8px;
-  transition: 0.3s;
-}
-
-.about .watch-video:hover a {
   color: var(--color-primary);
 }
 
