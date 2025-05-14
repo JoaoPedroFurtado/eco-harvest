@@ -96,3 +96,6 @@
     
 })(jQuery);
 
+
+
+ const cotacao = document.getElementById("cotacao");
