@@ -37,7 +37,8 @@
     label {
       font-weight: bold !important;
     }
-    input{
+
+    input {
       color: black !important;
     }
   </style>
@@ -127,25 +128,26 @@
           <form class="needs-validation" novalidate>
             <div class="row g-3 flex-column">
               <div class="col-12 col-sm-12">
-                <label for="nome" class="mb-2"  style="color: black; font-weight: 500;">Nome: <span
+                <label for="nome" class="mb-2" style="color: black; font-weight: 500;">Nome: <span
                     style="color: red;">*</span></label>
                 <input type="text" class="form-control border-0" id="nome" placeholder="ex:  João Pedro Furtado"
-                  style="height: 55px" required/>
+                  style="height: 55px" required />
                 <div class="invalid-feedback">
                   Por favor, insira seu nome.
                 </div>
               </div>
               <div class="col-12">
-                <label for="cpf"  class="mb-2" style="color: black; font-weight: 500;">CPF ou CNPJ: <span
+                <label for="cpf" class="mb-2" style="color: black; font-weight: 500;">CPF ou CNPJ: <span
                     style="color: red;">*</span></label>
-                <input type="text" class="form-control border-0"  id="cpfOuPJ" placeholder="ex: 432.123.111-30 || 45.123.321/0001-10"
-                  style="height: 55px" required/>
-                  <div class="invalid-feedback">
+                <input type="text" class="form-control border-0" id="cpfOuPJ"
+                  placeholder="ex: 432.123.111-30 || 45.123.321/0001-10" style="height: 55px" oninput="mCpfOuCnpj(this)"
+                  maxlength="18" required />
+                <div class=" invalid-feedback">
                   Por favor, insira seu CPF ou CNPJ.
                 </div>
               </div>
               <div class="col-12">
-                <label for="tipoPessoa" class="mb-2"  style="color: black; font-weight: 500;">Tipo de pessoa:
+                <label for="tipoPessoa" class="mb-2" style="color: black; font-weight: 500;">Tipo de pessoa:
                   <span style="color: red;">*</span></label>
                 <select class="form-select border-0" id="tipoPessoa" style="height: 55px" required>
                   <option value="">Selecione</option>
@@ -159,48 +161,48 @@
               <div class="col-12">
                 <label for="email" class="mb-2" style="color: black; font-weight: 500;">E-mail <span
                     style="color: red;">*</span></label>
-                <input type="email" class="form-control border-0" placeholder="ex: joao@gmail.com"
-                  style="height: 55px" id="email" required/>
-                  <div class="invalid-feedback">
+                <input type="email" class="form-control border-0" placeholder="ex: joao@gmail.com" style="height: 55px"
+                  id="email" required />
+                <div class="invalid-feedback">
                   Por favor, insira seu e-mail.
                 </div>
               </div>
 
               <div class="col-12">
-                <label for="tel"  class="mb-2" style="color: black; font-weight: 500;">Telefone<span
+                <label for="tel" class="mb-2" style="color: black; font-weight: 500;">Telefone<span
                     style="color: red;">*</span></label>
                 <input type="tel" class="form-control border-0" id="telefone" placeholder="ex: (19)99822-0102"
-                  style="height: 55px" required id="telefone"/>
-                  <div class="invalid-feedback">
+                  style="height: 55px" required id="telefone" />
+                <div class="invalid-feedback">
                   Por favor, insira seu telefone.
                 </div>
               </div>
 
               <div class="col-12">
-                <label for="cep"  class="mb-2" style="color: black; font-weight: 500;">CEP<span
+                <label for="cep" class="mb-2" style="color: black; font-weight: 500;">CEP<span
                     style="color: red;">*</span></label>
                 <input type="text" class="form-control border-0" id="CEP" placeholder="ex: 19023-230"
-                  style="height: 55px" required/>
-                  <div class="invalid-feedback">
+                  style="height: 55px" required />
+                <div class="invalid-feedback">
                   Por favor, insira seu CEP.
                 </div>
               </div>
 
               <div class="col-12">
-                <label for="rua"  class="mb-2" style="color: black; font-weight: 500;">Rua: <span
+                <label for="rua" class="mb-2" style="color: black; font-weight: 500;">Rua: <span
                     style="color: red;">*</span></label>
                 <input type="text" class="form-control border-0" id="rua" placeholder="ex: R. José Bongiovani"
-                  style="height: 55px" required/>
-                  <div class="invalid-feedback">
+                  style="height: 55px" required />
+                <div class="invalid-feedback">
                   Por favor, insira sua rua.
                 </div>
               </div>
               <div class="col-12">
-                <label for="bairro"  class="mb-2" style="color: black; font-weight: 500;">Bairro: <span
+                <label for="bairro" class="mb-2" style="color: black; font-weight: 500;">Bairro: <span
                     style="color: red;">*</span></label>
                 <input type="text" class="form-control border-0" id="bairro" placeholder="ex: Vila Liberdade"
-                  style="height: 55px" required/>
-                  <div class="invalid-feedback">
+                  style="height: 55px" required />
+                <div class="invalid-feedback">
                   Por favor, insira seu Bairro.
                 </div>
               </div>
@@ -209,33 +211,33 @@
                 <label for="cidade" class="mb-2" style="color: black; font-weight: 500;">Cidade:<span
                     style="color: red;">*</span></label>
                 <input type="text" class="form-control border-0" id="cidade" placeholder="ex: Presidente Prudente"
-                  style="height: 55px" required/>
-                  <div class="invalid-feedback">
+                  style="height: 55px" required />
+                <div class="invalid-feedback">
                   Por favor, insira sua cidade.
                 </div>
               </div>
 
               <div class="col-12">
-                <label for="nro"  class="mb-2" style="color: black; font-weight: 500;">Nro:<span
+                <label for="nro" class="mb-2" style="color: black; font-weight: 500;">Nro:<span
                     style="color: red;">*</span></label>
                 <input type="number" class="form-control border-0" id="numeroCasa" placeholder="ex: 10"
-                  style="height: 55px" required/>
-                  <div class="invalid-feedback">
+                  style="height: 55px" required />
+                <div class="invalid-feedback">
                   Por favor, insira o numero do local.
                 </div>
               </div>
 
               <div class="col-12">
-                <label for="text"  class="mb-2" style="color: black; font-weight: 500;">UF <span
+                <label for="text" class="mb-2" style="color: black; font-weight: 500;">UF <span
                     style="color: red;">*</span></label>
-                <input type="text" class="form-control border-0" id="UF" placeholder="ex: SP"
-                  style="height: 55px" required/>
-                  <div class="invalid-feedback">
+                <input type="text" class="form-control border-0" id="UF" placeholder="ex: SP" style="height: 55px"
+                  required />
+                <div class="invalid-feedback">
                   Por favor, insira seu estado.
                 </div>
               </div>
               <div class="col-12">
-                <label for="tipoPropriedade" class="mb-2"  style="color: black; font-weight: 500;">Tipo de propriedade
+                <label for="tipoPropriedade" class="mb-2" style="color: black; font-weight: 500;">Tipo de propriedade
                   rural: <span style="color: red;">*</span></label>
                 <select class="form-select border-0" style="height: 55px" id="propriedade" required>
                   <option value="">Selecione</option>
@@ -249,7 +251,7 @@
               </div>
 
               <div class="col-12">
-                <label for="tipoProduto" class="mb-2"  style="color: black; font-weight: 500;">Tipo de produto:
+                <label for="tipoProduto" class="mb-2" style="color: black; font-weight: 500;">Tipo de produto:
                   <span style="color: red;">*</span></label>
                 <select class="form-select border-0" style="height: 55px" id="produto" required>
                   <option value="">Selecione</option>
@@ -263,28 +265,27 @@
               </div>
 
               <div class="col-12">
-                <label for="quantidade"  class="mb-2" style="color: black; font-weight: 500;">Quantidade: <span
+                <label for="quantidade" class="mb-2" style="color: black; font-weight: 500;">Quantidade: <span
                     style="color: red;">*</span></label>
                 <input type="number" class="form-control border-0" id="quantidade" placeholder="ex: 2"
-                  style="height: 55px" required/>
-                  <div class="invalid-feedback">
+                  style="height: 55px" required />
+                <div class="invalid-feedback">
                   Por favor, informe a quantidade.
                 </div>
               </div>
 
               <div class="col-12">
-                <label for="data"  class="mb-2" style="color: black; font-weight: 500;">Prazo desejado para
+                <label for="data" class="mb-2" style="color: black; font-weight: 500;">Prazo desejado para
                   entrega: <span style="color: red;">*</span></label>
-                <input type="date" class="form-control border-0" id="prazo" 
-                  style="height: 55px" required/>
-                  <div class="invalid-feedback">
+                <input type="date" class="form-control border-0" id="prazo" style="height: 55px" required />
+                <div class="invalid-feedback">
                   Por favor, insira o prazo desejado.
                 </div>
               </div>
               <div class="col-12">
-                <label for="formaPagamento" class="mb-2"  style="color: black; font-weight: 500;">Forma de pagamento
+                <label for="formaPagamento" class="mb-2" style="color: black; font-weight: 500;">Forma de pagamento
                   preferida: <span style="color: red;">*</span></label>
-                <select class="form-select border-0" style="height: 55px" id="pagamento"required>
+                <select class="form-select border-0" style="height: 55px" id="pagamento" required>
                   <option value="">Selecione</option>
                   <option value="1">Boleto</option>
                   <option value="2">Pix</option>
@@ -297,7 +298,7 @@
               </div>
 
               <div class="col-12">
-                <label for="jCliente" class="mb-2"  style="color: black; font-weight: 500;">Já é cliente?:
+                <label for="jCliente" class="mb-2" style="color: black; font-weight: 500;">Já é cliente?:
                   <span style="color: red;">*</span></label>
                 <select class="form-select border-0" style="height: 55px" id="jcliente" required>
                   <option value="">Selecione</option>
@@ -309,7 +310,7 @@
                 </div>
               </div>
               <div class="col-12">
-                <label for="rOferta" class="mb-2"  style="color: black; font-weight: 500;">Deseja receber
+                <label for="rOferta" class="mb-2" style="color: black; font-weight: 500;">Deseja receber
                   ofertas por e-mail?: <span style="color: red;">*</span></label>
                 <select class="form-select border-0" style="height: 55px" id="recebePropaganda" required>
                   <option value="">Selecione</option>
@@ -322,7 +323,7 @@
               </div>
 
               <div class="col-12">
-                <label for="fConsultor" class="mb-2"  style="color: black; font-weight: 500;">Deseja falar com um
+                <label for="fConsultor" class="mb-2" style="color: black; font-weight: 500;">Deseja falar com um
                   consultor?: <span style="color: red;">*</span></label>
                 <select class="form-select border-0" style="height: 55px" id="falarVendedor" required>
                   <option value="">Selecione</option>
@@ -336,7 +337,8 @@
               <div class="col-12">
                 <label for="mOpcional" class="mb-2" style="color: black; font-weight: 500;">Mensagem
                   (opcional):</label>
-                <textarea class="form-control border-0" style="height: 100px;" placeholder="Uma breve descrição do seu modo de Servicos caso queira deixar mais direcionado seu orcaçmento"></textarea>
+                <textarea class="form-control border-0" style="height: 100px;"
+                  placeholder="Uma breve descrição do seu modo de Servicos caso queira deixar mais direcionado seu orcaçmento"></textarea>
               </div>
 
               <div class="form-check">
@@ -464,6 +466,7 @@
   <!-- Template Javascript -->
   <script src="./js/main.js"></script>
   <script src="./js/validacao.js"></script>
+  <script src="./js/mascara.js"></script>
 </body>
 
 </html>
