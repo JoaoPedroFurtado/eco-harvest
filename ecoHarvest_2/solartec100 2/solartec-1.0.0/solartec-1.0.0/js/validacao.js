@@ -14,54 +14,62 @@
   });
 })();
 
-//CEP
-let CEP = document.getElementById('CEP');
-CEP.addEventListener('blur', function () {
-  const campoCEP = this;
-  const cepLimpo = campoCEP.value.replace(/\D/g, '');
+// validando CEP
+const cepInput = document.getElementById('CEP');
 
-  if (cepLimpo.length === 8) {
-    fetch(`https://viacep.com.br/ws/${cepLimpo}/json/`)
-      .then(resposta => {
-        if (!resposta.ok) throw new Error('Erro na requisição');
-        return resposta.json();
-      })
-      .then(dados => {
-        if (dados.erro) {
-          campoCEP.classList.add('is-invalid');
-          campoCEP.classList.remove('is-valid');
-          return;
-        }
+cepInput.addEventListener('blur', () => {
+  const cep = cepInput.value.replace(/\D/g, '');
 
-        const camposAuto = [
-          { id: 'rua', valor: dados.logradouro },
-          { id: 'bairro', valor: dados.bairro },
-          { id: 'cidade', valor: dados.localidade },
-          { id: 'UF', valor: dados.uf }
-        ];
 
-        camposAuto.forEach(campo => {
-          const input = document.getElementById(campo.id);
-          input.value = campo.valor || '';
-          if (campo.valor) {
-            input.classList.remove('is-invalid');
-            input.classList.add('is-valid');
-          }
-        });
-
-        campoCEP.classList.remove('is-invalid');
-        campoCEP.classList.add('is-valid');
-      })
-      .catch(erro => {
-        console.error('Erro na requisição:', erro);
-        campoCEP.classList.add('is-invalid');
-        campoCEP.classList.remove('is-valid');
-      });
-  } else {
-    campoCEP.classList.add('is-invalid');
-    campoCEP.classList.remove('is-valid');
+  if (cep.length !== 8) {
+    marcarCampoInvalido(cepInput);
+    return;
   }
+
+  fetch(`https://viacep.com.br/ws/${cep}/json/`)
+    .then(res => res.json())
+    .then(dados => {
+
+      if (dados.erro) {
+        marcarCampoInvalido(cepInput);
+        return;
+      }
+
+
+      preencherCampo('rua', dados.logradouro);
+      preencherCampo('bairro', dados.bairro);
+      preencherCampo('cidade', dados.localidade);
+      preencherCampo('UF', dados.uf);
+
+      marcarCampoValido(cepInput);
+    })
+    .catch(err => {
+      console.error('Erro ao buscar CEP:', err);
+      marcarCampoInvalido(cepInput);
+    });
 });
+
+
+
+function preencherCampo(id, valor) {
+  const campo = document.getElementById(id);
+  campo.value = valor || '';
+  if (valor) {
+    marcarCampoValido(campo);
+  } else {
+    marcarCampoInvalido(campo);
+  }
+}
+
+function marcarCampoValido(campo) {
+  campo.classList.remove('is-invalid');
+  campo.classList.add('is-valid');
+}
+
+function marcarCampoInvalido(campo) {
+  campo.classList.add('is-invalid');
+  campo.classList.remove('is-valid');
+}
 
 
 //valida o campo nome quando aperta tab
@@ -136,18 +144,18 @@ email.addEventListener('blur', () => {
 //validando o telefone
 const telefoneValido = false
 const telefone = document.getElementById('telefone');
-telefone.addEventListener('blur', ()=>{
-     const celularRegex = /^\(?\d{2}\)?[\s-]?9\d{4}[-]?\d{4}$/;
-     if (celularRegex.test(telefone.value)) {
-      telefone.classList.remove('is-invalid');
-      telefone.classList.add('is-valid');
-      telefoneValido = true;
-    } else {
-      telefone.classList.remove('is-valid');
-      telefone.classList.add('is-invalid');
-      telefoneValido = false;
-      console.log("oi");
-    }
+telefone.addEventListener('blur', () => {
+  const celularRegex = /^\(?\d{2}\)?[\s-]?9\d{4}[-]?\d{4}$/;
+  if (celularRegex.test(telefone.value)) {
+    telefone.classList.remove('is-invalid');
+    telefone.classList.add('is-valid');
+    telefoneValido = true;
+  } else {
+    telefone.classList.remove('is-valid');
+    telefone.classList.add('is-invalid');
+    telefoneValido = false;
+    console.log("oi");
+  }
 })
 
 //validando o numero da residencia
@@ -155,9 +163,9 @@ const nro = document.getElementById('numeroCasa');
 
 
 nro.addEventListener('input', () => {
-  let valor = nro.value.replace(/\D/g, ''); 
+  let valor = nro.value.replace(/\D/g, '');
 
-  
+
   if (valor.length > 4 || parseInt(valor) > 9999) {
     valor = valor.slice(0, 4);
   }
@@ -196,8 +204,53 @@ tipoPropriedade.addEventListener('blur', () => {
   }
 })
 
+//valida se foi selecionado corretamente o tipo de produto
+const tipoPrduto = document.getElementById('produto');
+tipoPrduto.addEventListener('blur', () => {
+  if (tipoPrduto.value === "") {
+    tipoPrduto.classList.remove('is-valid');
+    tipoPrduto.classList.add('is-invalid');
+    valido = false;
+  } else {
+    tipoPrduto.classList.remove('is-invalid');
+    tipoPrduto.classList.add('is-valid');
+    valido = true;
+  }
+})
 
 
+
+
+//validando quantidade
+const nroQuantidade = document.getElementById('quantidade');
+
+
+nroQuantidade.addEventListener('input', () => {
+  let valorQuant = nroQuantidade.value.replace(/\D/g, '');
+
+
+  if (valorQuant.length > 4 || parseInt(valorQuant) > 9999) {
+    valorQuant = valor.slice(0, 4);
+  }
+
+  nroQuantidade.value = valorQuant;
+});
+
+
+nroQuantidade.addEventListener('blur', () => {
+  const valorQuant = parseInt(nroQuantidade.value);
+
+  if (nroQuantidade.value === '' || isNaN(valorQuant) || valorQuant < 0 || valorQuant > 9999) {
+    nroQuantidade.classList.remove('is-valid');
+    nroQuantidade.classList.add('is-invalid');
+    valido = false;
+    console.log("oi");
+  } else {
+    nroQuantidade.classList.remove('is-invalid');
+    nroQuantidade.classList.add('is-valid');
+    valido = true;
+  }
+});
 
 
 
