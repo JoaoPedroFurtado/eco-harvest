@@ -87,41 +87,120 @@ nome.addEventListener('blur', () => {
   }
 });
 
-//valida CPF ou CNPJ
-const campo = document.getElementById('cpfOuPJ');
 
-campo.addEventListener('blur', () => {
-  const valorLimpo = campo.value.replace(/\D/g, '');
+  const campo = document.getElementById('cpfOuPJ');
+  const tipoPessoa = document.getElementById('tipoPessoa');
 
-  let validoCpfCnpj = false;
+  // Ajusta máscara e maxlength conforme tipo de pessoa
+  tipoPessoa.addEventListener('change', () => {
+    campo.value = '';
+    campo.classList.remove('is-valid', 'is-invalid');
+    
+    if (tipoPessoa.value === 'Pessoa Fisica') {
+      campo.maxLength = 14;  // 000.000.000-00
+      campo.placeholder = 'ex: 432.123.111-30';
+    } else if (tipoPessoa.value === 'Pessoa Juridica') {
+      campo.maxLength = 18;  // 00.000.000/0000-00
+      campo.placeholder = 'ex: 45.123.321/0001-10';
+    } else {
+      campo.maxLength = 18;
+      campo.placeholder = 'Selecione o tipo de pessoa';
+    }
+  });
 
-  if (valorLimpo.length === 11 || valorLimpo.length === 14) {
-    validoCpfCnpj = true;
+  // Aplica máscara enquanto digita
+  campo.addEventListener('input', () => {
+    let value = campo.value.replace(/\D/g, '');
+    
+    if (tipoPessoa.value === 'Pessoa Fisica') {
+      value = value.replace(/(\d{3})(\d)/, '$1.$2');
+      value = value.replace(/(\d{3})(\d)/, '$1.$2');
+      value = value.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+    } else if (tipoPessoa.value === 'Pessoa Juridica') {
+      value = value.replace(/^(\d{2})(\d)/, '$1.$2');
+      value = value.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3');
+      value = value.replace(/\.(\d{3})(\d)/, '.$1/$2');
+      value = value.replace(/(\d{4})(\d)/, '$1-$2');
+    }
+    
+    campo.value = value;
+  });
+
+  // Valida CPF ou CNPJ ao sair do campo
+  campo.addEventListener('blur', () => {
+    const valorLimpo = campo.value.replace(/\D/g, '');
+    let valido = false;
+
+    if (tipoPessoa.value === 'Pessoa Fisica') {
+      valido = validarCPF(valorLimpo);
+    } else if (tipoPessoa.value === 'Pessoa Juridica') {
+      valido = validarCNPJ(valorLimpo);
+    }
+
+    if (valido) {
+      campo.classList.add('is-valid');
+      campo.classList.remove('is-invalid');
+    } else {
+      campo.classList.add('is-invalid');
+      campo.classList.remove('is-valid');
+    }
+  });
+
+  // Valida seleção de tipo de pessoa
+  tipoPessoa.addEventListener('blur', () => {
+    if (tipoPessoa.value === "") {
+      tipoPessoa.classList.remove('is-valid');
+      tipoPessoa.classList.add('is-invalid');
+    } else {
+      tipoPessoa.classList.remove('is-invalid');
+      tipoPessoa.classList.add('is-valid');
+    }
+  });
+
+  // Função de validação de CPF
+  function validarCPF(cpf) {
+    if (cpf.length !== 11 || /^(\d)\1+$/.test(cpf)) return false;
+    let soma = 0;
+    for (let i = 0; i < 9; i++) soma += Number(cpf.charAt(i)) * (10 - i);
+    let resto = (soma * 10) % 11;
+    if (resto === 10 || resto === 11) resto = 0;
+    if (resto !== Number(cpf.charAt(9))) return false;
+
+    soma = 0;
+    for (let i = 0; i < 10; i++) soma += Number(cpf.charAt(i)) * (11 - i);
+    resto = (soma * 10) % 11;
+    if (resto === 10 || resto === 11) resto = 0;
+    return resto === Number(cpf.charAt(10));
   }
 
-  if (validoCpfCnpj) {
-    campo.classList.add('is-valid');
-    campo.classList.remove('is-invalid');
-  } else {
-    campo.classList.add('is-invalid');
-    campo.classList.remove('is-valid');
+  // Função de validação de CNPJ
+  function validarCNPJ(cnpj) {
+    if (cnpj.length !== 14 || /^(\d)\1+$/.test(cnpj)) return false;
+    let t = cnpj.length - 2;
+    let d = cnpj.substring(t);
+    let d1 = parseInt(d.charAt(0));
+    let d2 = parseInt(d.charAt(1));
+
+    let calc = x => {
+      let n = 0;
+      let pos = x - 7;
+      for (let i = x; i >= 1; i--) {
+        n += cnpj.charAt(x - i) * pos--;
+        if (pos < 2) pos = 9;
+      }
+      return n;
+    };
+
+    let n1 = calc(t);
+    let r1 = n1 % 11 < 2 ? 0 : 11 - n1 % 11;
+    if (r1 !== d1) return false;
+
+    let n2 = calc(t + 1);
+    let r2 = n2 % 11 < 2 ? 0 : 11 - n2 % 11;
+    return r2 === d2;
   }
-});
 
 
-//valida se foi selecionado corretamente o tipo de pessoa
-const tipoPessoa = document.getElementById('tipoPessoa');
-tipoPessoa.addEventListener('blur', () => {
-  if (tipoPessoa.value === "") {
-    tipoPessoa.classList.remove('is-valid');
-    tipoPessoa.classList.add('is-invalid');
-    valido = false;
-  } else {
-    tipoPessoa.classList.remove('is-invalid');
-    tipoPessoa.classList.add('is-valid');
-    valido = true;
-  }
-})
 
 //valida o campo email quando aperta tab
 const emailValido = false
@@ -141,12 +220,36 @@ email.addEventListener('blur', () => {
   }
 });
 
-//validando o telefone
-const telefoneValido = false
+
+let telefoneValido = false;  // Corrigido: precisa ser let
+
 const telefone = document.getElementById('telefone');
+
+// Máscara dinâmica ao digitar
+telefone.addEventListener('input', () => {
+  let value = telefone.value.replace(/\D/g, '');
+
+  if (value.length > 11) value = value.slice(0, 11);  // Máximo 11 dígitos
+
+  if (value.length <= 10) {
+    // Fixo: (00) 0000-0000
+    value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
+    value = value.replace(/(\d{4})(\d)/, '$1-$2');
+  } else {
+    // Celular: (00) 00000-0000
+    value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
+    value = value.replace(/(\d{5})(\d)/, '$1-$2');
+  }
+
+  telefone.value = value;
+});
+
+// Validação ao perder foco
 telefone.addEventListener('blur', () => {
-  const celularRegex = /^\(?\d{2}\)?[\s-]?9\d{4}[-]?\d{4}$/;
-  if (celularRegex.test(telefone.value)) {
+  // Aceita fixo (10 dígitos) e celular (11 dígitos)
+  const telefoneRegex = /^\(\d{2}\)\s?\d{4,5}-\d{4}$/;
+
+  if (telefoneRegex.test(telefone.value)) {
     telefone.classList.remove('is-invalid');
     telefone.classList.add('is-valid');
     telefoneValido = true;
@@ -156,7 +259,7 @@ telefone.addEventListener('blur', () => {
     telefoneValido = false;
     console.log("oi");
   }
-})
+});
 
 //validando o numero da residencia
 const nro = document.getElementById('numeroCasa');
@@ -251,6 +354,79 @@ nroQuantidade.addEventListener('blur', () => {
     valido = true;
   }
 });
+
+
+//data
+
+
+const prazo = document.getElementById('prazo');
+
+prazo.addEventListener('blur', () => {
+  const hoje = new Date();
+  hoje.setHours(0, 0, 0, 0);  // Zera horas para comparar só datas
+
+  const dataSelecionada = new Date(prazo.value);
+
+  if (prazo.value === "" || dataSelecionada < hoje) {
+    // Data inválida: vazia ou anterior a hoje
+    prazo.classList.add('is-invalid');
+    prazo.classList.remove('is-valid');
+  } else {
+    // Data válida: hoje ou futura
+    prazo.classList.remove('is-invalid');
+    prazo.classList.add('is-valid');
+  }
+});
+
+
+// Valida Forma de Pagamento
+const pagamento = document.getElementById('pagamento');
+pagamento.addEventListener('blur', () => {
+  if (pagamento.value === "") {
+    pagamento.classList.add('is-invalid');
+    pagamento.classList.remove('is-valid');
+  } else {
+    pagamento.classList.remove('is-invalid');
+    pagamento.classList.add('is-valid');
+  }
+});
+
+// Valida Já é Cliente
+const jcliente = document.getElementById('jcliente');
+jcliente.addEventListener('blur', () => {
+  if (jcliente.value === "") {
+    jcliente.classList.add('is-invalid');
+    jcliente.classList.remove('is-valid');
+  } else {
+    jcliente.classList.remove('is-invalid');
+    jcliente.classList.add('is-valid');
+  }
+});
+
+// Valida Deseja receber ofertas
+const recebePropaganda = document.getElementById('recebePropaganda');
+recebePropaganda.addEventListener('blur', () => {
+  if (recebePropaganda.value === "") {
+    recebePropaganda.classList.add('is-invalid');
+    recebePropaganda.classList.remove('is-valid');
+  } else {
+    recebePropaganda.classList.remove('is-invalid');
+    recebePropaganda.classList.add('is-valid');
+  }
+});
+
+// Valida Deseja falar com consultor
+const falarVendedor = document.getElementById('falarVendedor');
+falarVendedor.addEventListener('blur', () => {
+  if (falarVendedor.value === "") {
+    falarVendedor.classList.add('is-invalid');
+    falarVendedor.classList.remove('is-valid');
+  } else {
+    falarVendedor.classList.remove('is-invalid');
+    falarVendedor.classList.add('is-valid');
+  }
+});
+
 
 
 
