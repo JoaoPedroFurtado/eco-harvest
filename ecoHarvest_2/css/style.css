@@ -325,17 +325,6 @@
   position: relative;
 }
 
-.portfolio-img::before,
-.portfolio-img::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  top: 0;
-  background: var(--dark);
-  transition: 0.5s;
-}
-
 .portfolio-img::before {
   left: 50%;
 }
@@ -366,11 +355,6 @@
   opacity: 0;
   z-index: 1;
   transition: 0.5s;
-}
-
-.portfolio-item:hover .portfolio-btn {
-  opacity: 1;
-  transition-delay: 0.3s;
 }
 
 /*** Quote ***/
@@ -656,4 +640,15 @@
     top: 0;
     right: 0;
   }
+}
+
+.button-sobre {
+  width: 80%;
+  height: 35px;
+  background-color: #32c36c;
+  border: none;
+  border-radius: 8px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 500;
 }
