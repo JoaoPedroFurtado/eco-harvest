@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Solartec - Renewable Energy Website Template</title>
+  <title>EcoHarvest</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta content="" name="keywords" />
   <meta content="" name="description" />
@@ -55,42 +55,48 @@
   <!-- Spinner End -->
 
   <!-- Topbar Start -->
-  <div class="container-fluid bg-dark p-0">
-    <div class="row gx-0 d-none d-lg-flex">
-      <div class="col-lg-7 px-5 text-start">
-        <div class="h-100 d-inline-flex align-items-center me-4">
-          <small class="fa fa-map-marker-alt text-primary me-2"></small>
-          <small>1233 Presidente Prudente, São Paulo, BR</small>
+    <div class="container-fluid bg-dark p-0">
+      <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-7 px-5 text-start">
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <small class="fa fa-map-marker-alt text-primary me-2"></small>
+            <small>1233 Presidente Prudente, São Paulo, BR</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center">
+            <small class="far fa-clock text-primary me-2"></small>
+            <small>Seg - Sex: 09.00 AM - 18.00 PM</small>
+          </div>
         </div>
-        <div class="h-100 d-inline-flex align-items-center">
-          <small class="far fa-clock text-primary me-2"></small>
-          <small>Seg - Sex: 09.00 AM - 18.00 PM</small>
-        </div>
-      </div>
-      <div class="col-lg-5 px-5 text-end">
-        <div class="h-100 d-inline-flex align-items-center me-4">
-          <small class="fa fa-phone-alt text-primary me-2"></small>
-          <small>+018 3909 6789</small>
-        </div>
-        <div class="h-100 d-inline-flex align-items-center mx-n2">
-          <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
-              class="fab fa-facebook-f"></i></a>
-          <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
-              class="fab fa-twitter"></i></a>
-          <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
-              class="fab fa-linkedin-in"></i></a>
-          <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
+        <div class="col-lg-5 px-5 text-end">
+          <div class="h-100 d-inline-flex align-items-center me-4 py-2">
+            <small class="fa fa-phone-alt text-primary me-2"></small>
+            <small>+018 3909 6789</small>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Topbar End -->
+    <!-- Topbar End -->
 
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
     <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
       <h2 class="m-0 text-primary">EcoHarvest</h2>
     </a>
+     <!-- Ícone de usuário com dropdown -->
+        <div class="dropdown d-flex align-items-center me-auto ms-2">
+            <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="userDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-user fa-lg text-primary"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                <li><span class="dropdown-item-text">Olá, João</span></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./sobreuser.html">Meu perfil</a></li>
+                <li><a class="dropdown-item" href="./login.html">Sair</a></li>
+            </ul>
+        </div>
     <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -100,7 +106,7 @@
         <a href="about.html" class="nav-item nav-link">Sobre</a>
         <a href="project.html" class="nav-item nav-link">Maquinários</a>
 
-        <a href="contact.html" class="nav-item nav-link">Contato</a>
+        <a href="contact.html" class="nav-item nav-link">Lojas</a>
         <a href="contact.html" class="nav-item nav-link active">Cotação</a>
       </div>
     </div>
@@ -108,9 +114,20 @@
   <!-- Navbar End -->
 
   <!-- Page Header Start -->
-  <div class="container-fluid page-cotacao py-5 mb-5">
+  <div class="container-fluid page-header py-5 mb-5">
     <div class="container py-5">
-      <h1 class="display-3 text-white mb-3 animated slideInDown">Cotação</h1>
+      <h1 class="display-3  mb-3 animated slideInDown text-white">Cotação</h1>
+      <nav aria-label="breadcrumb animated slideInDown">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <span class="text-white">Home</span>
+          </li>
+
+          <li class="breadcrumb-item text-white active" aria-current="page">
+            Cotação
+          </li>
+        </ol>
+      </nav>
     </div>
   </div>
   <!-- Page Header End -->
@@ -119,7 +136,7 @@
   <div class="container-fluid my-5 px-lg-0">
     <div class="px-lg-0 d-flex justify-content-center align-items-center rounded">
       <div class="col-lg-6 bg-light" style="border-radius: 10px;" data-wow-delay="0.5s">
-        <div class="p-lg-5 w-100 ">
+        <div class="p-lg-5 w-100 rounded " style="background-color: #dadad8 !important; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px !important; ">
           <div class="mb-4 flex-column d-flex justify-content-center align-items-center">
             <h1 class="mb-1">Cotação</h1>
             <h6 class="text-primary" style="font-size: 14px;">Orçamento gratuito</h6>
@@ -130,7 +147,7 @@
               <div class="col-12 col-sm-12">
                 <label for="nome" class="mb-2" style="color: black; font-weight: 500;">Nome: <span
                     style="color: red;">*</span></label>
-                <input type="text" class="form-control border-0" id="nome" placeholder="ex:  João Pedro Furtado"
+                <input type="text" class="form-control border-0 " id="nome" placeholder="ex:  João Pedro Furtado"
                   style="height: 55px" required />
                 <div class="invalid-feedback">
                   Por favor, insira seu nome.
@@ -171,10 +188,20 @@
               </div>
 
               <div class="col-12">
+                <label for="tel" class="mb-2" style="color: black; font-weight: 500;">Celular<span
+                    style="color: red;">*</span></label>
+                <input type="tel" class="form-control border-0"  placeholder="ex: (19) 99822-0102"
+                  style="height: 55px" required id="telefone" />
+                <div class="invalid-feedback">
+                  Por favor, insira seu celular.
+                </div>
+              </div>
+
+              <div class="col-12">
                 <label for="tel" class="mb-2" style="color: black; font-weight: 500;">Telefone<span
                     style="color: red;">*</span></label>
-                <input type="tel" class="form-control border-0" id="telefone" placeholder="ex: (19)99822-0102"
-                  style="height: 55px" required id="telefone" />
+                <input type="tel" class="form-control border-0" id="telefone2" placeholder="ex: (19) 3222-6832"
+                  style="height: 55px" required  />
                 <div class="invalid-feedback">
                   Por favor, insira seu telefone.
                 </div>
@@ -183,7 +210,7 @@
               <div class="col-12">
                 <label for="cep" class="mb-2" style="color: black; font-weight: 500;">CEP<span
                     style="color: red;">*</span></label>
-                <input type="text" class="form-control border-0" id="CEP" placeholder="ex: 19023-230"
+                <input type="text" class="form-control border-0" id="CEP" maxlength="8" placeholder="ex: 19023-230"
                   style="height: 55px" required />
                 <div class="invalid-feedback">
                   Por favor, insira seu CEP.
@@ -220,7 +247,7 @@
               </div>
 
               <div class="col-12">
-                <label for="nro" class="mb-2" style="color: black; font-weight: 500;">Nro:<span
+                <label for="nro" class="mb-2" style="color: black; font-weight: 500;">Numero:<span
                     style="color: red;">*</span></label>
                 <input type="number" class="form-control border-0" id="numeroCasa" placeholder="ex: 10"
                   style="height: 55px" required max="9999" />
@@ -345,14 +372,13 @@
 
               <div class="form-check">
                 <input type="checkbox" class="form-check-input" />
-                <label class="form-check-label">Autorizo o recebimento de publicidade da New Holland
-                  Construction.</label>
+                <label class="form-check-label">Autorizo o recebimento de publicidade da EcoHarvest.</label>
               </div>
 
               <div class="form-check">
                 <input type="checkbox" class="form-check-input" required />
                 <label class="form-check-label">Li e estou ciente da
-                  <a href="#">Política de Privacidade</a> deste site.</label>
+                  <span class="text-success">Política de Privacidade</span>  deste site.</label>
               </div>
               <div class="col-12 d-flex justify-content-center" style="margin-top: 20px;">
                 <button class="btn btn-primary rounded-pill py-3 px-5" style="width: 50%;" type="submit">
@@ -368,79 +394,105 @@
   </div>
   <!-- Quote End -->
 
-  <!-- Início do Rodapé -->
-<div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-  <div class="container py-5">
-    <div class="row g-5">
-      
-      <!-- Contato -->
-      <div class="col-lg-3 col-md-6">
-        <h5 class="text-white mb-4">Endereço</h5>
-        <p class="mb-2">
-          <i class="fa fa-map-marker-alt me-3"></i>1233 - Presidente Prudente, São Paulo, BR
-        </p>
-        <p class="mb-2">
-          <i class="fa fa-phone-alt me-3"></i>(18)99232-0208
-        </p>
-        <p class="mb-2">
-          <i class="fa fa-envelope me-3"></i>contato@ecoharvest.com.br
-        </p>
-      </div>
+ <!-- Início do Rodapé -->
+    <div
+      class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <!-- Contato -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Endereço</h5>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>1233 - Presidente
+              Prudente, São Paulo, BR
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>(18)99232-0208
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>contato@ecoharvest.com.br
+            </p>
+          </div>
 
-      <!-- Links rápidos -->
-      <div class="col-lg-3 col-md-6">
-        <h5 class="text-white mb-4">Links Rápidos</h5>
-        <a class="btn btn-link" href="#">Sobre Nós</a>
-        <a class="btn btn-link" href="#">Contato</a>
-        <a class="btn btn-link" href="#">Serviços</a>
-        <a class="btn btn-link" href="#">Termos e Condições</a>
-        <a class="btn btn-link" href="#">Suporte</a>
-      </div>
+          <!-- Links rápidos -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Links Rápidos</h5>
+            <a class="btn btn-link" href="/ecoHarvest_2/about.html"
+              >Sobre Nós</a
+            >
+            <a class="btn btn-link" href="/ecoHarvest_2/contact.html"
+              >Contato</a
+            >
+            <a class="btn btn-link" href="/ecoHarvest_2/project.html">Maquinarios</a>
+          </div>
 
-      <!-- Galeria -->
-      <div class="col-lg-3 col-md-6">
-        <h5 class="text-white mb-4">Galeria de Projetos</h5>
-        <div class="row g-2">
-          <div class="col-4"><img class="img-fluid rounded" src="img/gallery-1.jpg" alt="" /></div>
-          <div class="col-4"><img class="img-fluid rounded" src="img/gallery-2.jpg" alt="" /></div>
-          <div class="col-4"><img class="img-fluid rounded" src="img/gallery-3.jpg" alt="" /></div>
-          <div class="col-4"><img class="img-fluid rounded" src="img/gallery-4.jpg" alt="" /></div>
-          <div class="col-4"><img class="img-fluid rounded" src="img/gallery-5.jpg" alt="" /></div>
-          <div class="col-4"><img class="img-fluid rounded" src="img/gallery-6.jpg" alt="" /></div>
+          <!-- Galeria -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Galeria de Projetos</h5>
+            <div class="row g-2">
+              <div class="col-4">
+                <img class="img-fluid rounded" src="img/back0.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid rounded" src="img/back4.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid rounded" src="img/back3.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid rounded" src="img/back5.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid rounded" src="img/back10.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid rounded" src="img/back12.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Receba Novidades</h5>
+            <p>
+              Inscreva-se e fique por dentro das últimas tendências do
+              agronegócio sustentável.
+            </p>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input
+                class="form-control border-0 w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="Seu e-mail"
+              />
+              <button
+                type="button"
+                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+               <a href="./cadastro.html" class="text-white">Inscrever-se</a>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Newsletter -->
-      <div class="col-lg-3 col-md-6">
-        <h5 class="text-white mb-4">Receba Novidades</h5>
-        <p>Inscreva-se e fique por dentro das últimas tendências do agronegócio sustentável.</p>
-        <div class="position-relative mx-auto" style="max-width: 400px">
-          <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Seu e-mail" />
-          <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
-            Inscrever-se
-          </button>
+      <!-- Créditos -->
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a href="#">EcoHarvest</a> - Todos os direitos reservados.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              Desenvolvido por <a href="#">Syntex</a><br />
+              Distribuído por: <a href="#" target="_blank">Syntex</a>
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
-  </div>
-
-  <!-- Créditos -->
-  <div class="container">
-    <div class="copyright">
-      <div class="row">
-        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-          &copy; <a href="#">EcoHarvest</a> - Todos os direitos reservados.
-        </div>
-        <div class="col-md-6 text-center text-md-end">
-          Desenvolvido por <a href="#">Syntex</a><br />
-          Distribuído por: <a href="#" target="_blank">Syntex</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Fim do Rodapé -->
+    <!-- Fim do Rodapé -->
 
   <!-- Back to Top -->
   <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
