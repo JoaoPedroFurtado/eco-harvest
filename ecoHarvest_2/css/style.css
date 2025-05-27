@@ -333,15 +333,7 @@
   right: 50%;
 }
 
-.portfolio-item:hover .portfolio-img::before {
-  width: 51%;
-  left: 0;
-}
 
-.portfolio-item:hover .portfolio-img::after {
-  width: 51%;
-  right: 0;
-}
 
 .portfolio-btn {
   position: absolute;
@@ -642,13 +634,4 @@
   }
 }
 
-.button-sobre {
-  width: 80%;
-  height: 35px;
-  background-color: #32c36c;
-  border: none;
-  border-radius: 8px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 500;
-}
+
