@@ -1,825 +1,699 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>EcoHarvest</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+<head>
+  <meta charset="utf-8" />
+  <title>EcoHarvest</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+    rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-  <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-border text-primary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-      >
-        <span class="sr-only">Loading...</span>
-      </div>
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
-    <!-- Spinner End -->
+  </div>
+  <!-- Spinner End -->
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark p-0">
-      <div class="row gx-0 d-none d-lg-flex">
-        <div class="col-lg-7 px-5 text-start">
-          <div class="h-100 d-inline-flex align-items-center me-4">
-            <small class="fa fa-map-marker-alt text-primary me-2"></small>
-            <small>1233 Presidente Prudente, São Paulo, BR</small>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center">
-            <small class="far fa-clock text-primary me-2"></small>
-            <small>Seg - Sex: 09.00 AM - 18.00 PM</small>
-          </div>
+  <!-- Topbar Start -->
+  <div class="container-fluid bg-dark p-0">
+    <div class="row gx-0 d-none d-lg-flex">
+      <div class="col-lg-7 px-5 text-start">
+        <div class="h-100 d-inline-flex align-items-center me-4">
+          <small class="fa fa-map-marker-alt text-primary me-2"></small>
+          <small>1233 Presidente Prudente, São Paulo, BR</small>
         </div>
-        <div class="col-lg-5 px-5 text-end">
-          <div class="h-100 d-inline-flex align-items-center me-4 py-2">
-            <small class="fa fa-phone-alt text-primary me-2"></small>
-            <small>+018 3909 6789</small>
-          </div>
+        <div class="h-100 d-inline-flex align-items-center">
+          <small class="far fa-clock text-primary me-2"></small>
+          <small>Seg - Sex: 09.00 AM - 18.00 PM</small>
+        </div>
+      </div>
+      <div class="col-lg-5 px-5 text-end">
+        <div class="h-100 d-inline-flex align-items-center me-4 py-2">
+          <small class="fa fa-phone-alt text-primary me-2"></small>
+          <small>+018 3909 6789</small>
         </div>
       </div>
     </div>
-    <!-- Topbar End -->
+  </div>
+  <!-- Topbar End -->
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-  <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-    <h2 class="m-0 text-primary">EcoHarvest</h2>
-  </a>
-
-  <!-- Ícone de usuário com dropdown -->
-  <div class="dropdown d-flex align-items-center me-auto ms-2">
-    <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="fa fa-user fa-lg text-primary"></i>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+      <h2 class="m-0 text-primary">EcoHarvest</h2>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-      <li><span class="dropdown-item-text">Olá, João</span></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="./sobreuser.html">Meu perfil</a></li>
-      <li><a class="dropdown-item" href="./login.html">Sair</a></li>
-    </ul>
+
+    <!-- Ícone de usuário com dropdown -->
+    <div class="dropdown d-flex align-items-center me-auto ms-2">
+      <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="userDropdown"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa fa-user fa-lg text-primary"></i>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+        <li><span class="dropdown-item-text">Olá, João</span></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="./sobreuser.html">Meu perfil</a></li>
+        <li><a class="dropdown-item" href="./login.html">Sair</a></li>
+      </ul>
+    </div>
+
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto p-4 p-lg-0">
+        <a href="index.html" class="nav-item nav-link active">Home</a>
+        <a href="about.html" class="nav-item nav-link">Sobre</a>
+        <a href="project.html" class="nav-item nav-link">Maquinários</a>
+        <a href="contact.html" class="nav-item nav-link">Lojas</a>
+      </div>
+      <!-- Botão para desktop -->
+      <a href="./cotacao.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+        Obter uma cotação<i class="fa fa-arrow-right ms-3"></i>
+      </a>
+
+      <!-- Botão para mobile -->
+      <a href="./cotacao.html" class="btn btn-primary w-100 rounded-0 py-3 d-block d-lg-none mt-3">
+        Obter uma cotação<i class="fa fa-arrow-right ms-2"></i>
+      </a>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Carousel Start -->
+  <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="owl-carousel header-carousel position-relative">
+
+      <div class="owl-carousel-item position-relative" data-dot="<img src='img/img-back3.jpg'>">
+        <img class="img-fluid" src="img/img-back3.jpg" alt="" />
+        <div class="overlay"></div>
+        <div class="owl-carousel-inner">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-10 col-lg-8">
+                <h1 class="display-2 text-white animated slideInDown">
+                  Pioneiros em Tecnologia Agrícola
+                </h1>
+                <p class="fs-5 fw-medium text-white mb-4 pb-3">
+                  Somos referência em inovação para o campo. Equipamentos
+                  modernos que aumentam a produtividade e eficiência,
+                  garantindo o melhor desempenho na lavoura.
+                </p>
+                <a href="./about.html" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Saiba
+                  mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="owl-carousel-item position-relative" data-dot="<img src='img/img-back2.jpg'>">
+        <img class="img-fluid" src="img/img-back2.jpg" alt="" />
+        <div class="overlay"></div>
+        <div class="owl-carousel-inner">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-10 col-lg-8">
+                <h1 class="display-2 text-white animated slideInDown">
+                  Eficiência e Potência no Campo
+                </h1>
+                <p class="fs-5 fw-medium text-white mb-4 pb-3">
+                  Tratores, colheitadeiras e implementos agrícolas de última
+                  geração. Tudo o que você precisa para otimizar o trabalho no
+                  campo com qualidade e durabilidade.
+                </p>
+                <a href="./about.html" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Saiba
+                  mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="owl-carousel-item position-relative" data-dot="<img src='img/img-back7.jpg'>">
+        <img class="img-fluid" src="img/img-back7.jpg" alt="" />
+
+        <div class="owl-carousel-inner">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-10 col-lg-8">
+                <h1 class="display-2 text-white animated slideInDown">
+                  Revolucionando a Agricultura
+                </h1>
+                <p class="fs-5 fw-medium text-white mb-4 pb-3">
+                  Tecnologia e robustez para o seu dia a dia. Máquinas que
+                  transformam desafios em produtividade, elevando o potencial
+                  da sua colheita.
+                </p>
+                <a href="./about.html" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Saiba
+                  mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Carousel End -->
+
+  <!-- Feature Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+          <div class="d-flex align-items-center mb-4">
+            <div class="btn-lg-square bg-primary rounded-circle me-3">
+              <i class="fa fa-users text-white"></i>
+            </div>
+            <h1 class="mb-0" data-toggle="counter-up">3453</h1>
+          </div>
+          <h5 class="mb-3">Clientes Satisfeitos</h5>
+          <span>Agricultores confiam em nossas máquinas para melhorar sua
+            produção e eficiência no campo.</span>
+        </div>
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+          <div class="d-flex align-items-center mb-4">
+            <div class="btn-lg-square bg-primary rounded-circle me-3">
+              <i class="fa fa-check text-white"></i>
+            </div>
+            <h1 class="mb-0" data-toggle="counter-up">4234</h1>
+          </div>
+          <h5 class="mb-3">Projetos Concluídos</h5>
+          <span>Soluções inovadoras entregues para otimizar o trabalho agrícola e
+            aumentar a produtividade.</span>
+        </div>
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+          <div class="d-flex align-items-center mb-4">
+            <div class="btn-lg-square bg-primary rounded-circle me-3">
+              <i class="fa fa-award text-white"></i>
+            </div>
+            <h1 class="mb-0" data-toggle="counter-up">3123</h1>
+          </div>
+          <h5 class="mb-3">Prêmios Recebidos</h5>
+          <span>Reconhecidos pela qualidade e inovação no desenvolvimento de
+            equipamentos agrícolas.</span>
+        </div>
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+          <div class="d-flex align-items-center mb-4">
+            <div class="btn-lg-square bg-primary rounded-circle me-3">
+              <i class="fa fa-users-cog text-white"></i>
+            </div>
+            <h1 class="mb-0" data-toggle="counter-up">1831</h1>
+          </div>
+          <h5 class="mb-3">Trabalhadores Especializados</h5>
+          <span>Profissionais capacitados garantindo o melhor desempenho e
+            suporte para sua lavoura.</span>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <button
-    type="button"
-    class="navbar-toggler me-4"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarCollapse"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <!-- About Start -->
+  <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container feature px-lg-0">
+      <div class="row g-0 mx-lg-0">
+        <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+          <div class="p-lg-5 ps-lg-0">
+            <h6 class="text-primary">Por que escolher a EcoHarvest?</h6>
+            <h1 class="mb-4">
+              Soluções Completas em Máquinas Agrícolas para o Campo Moderno
+            </h1>
+            <p class="mb-4 pb-2">
+              A EcoHarvest entrega tecnologia e robustez para transformar o
+              dia a dia do produtor. Nossos equipamentos unem inovação,
+              eficiência e confiança para todas as etapas da produção
+              agrícola.
+            </p>
 
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <div class="navbar-nav ms-auto p-4 p-lg-0">
-      <a href="index.html" class="nav-item nav-link active">Home</a>
-      <a href="about.html" class="nav-item nav-link">Sobre</a>
-      <a href="project.html" class="nav-item nav-link">Maquinários</a>
-      <a href="contact.html" class="nav-item nav-link">Lojas</a>
+
+            <div class="row g-4 pt-3">
+              <div class="col-12 col-md-6">
+                <div class="d-flex align-items-start">
+                  <div
+                    class="btn-lg-square bg-primary rounded-circle flex-shrink-0 d-flex justify-content-center align-items-center"
+                    style="width: 60px; height: 60px;">
+                    <i class="fa fa-check text-white fa-lg"></i>
+                  </div>
+                  <div class="ms-3">
+                    <p class="mb-0">Alta</p>
+                    <h5 class="mb-0">Qualidade</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="d-flex align-items-start">
+                  <div
+                    class="btn-lg-square bg-primary rounded-circle flex-shrink-0 d-flex justify-content-center align-items-center"
+                    style="width: 60px; height: 60px;">
+                    <i class="fa fa-user-check text-white fa-lg"></i>
+                  </div>
+                  <div class="ms-3">
+                    <p class="mb-0">Equipe</p>
+                    <h5 class="mb-0">Especializada</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="d-flex align-items-start">
+                  <div
+                    class="btn-lg-square bg-primary rounded-circle flex-shrink-0 d-flex justify-content-center align-items-center"
+                    style="width: 60px; height: 60px;">
+                    <i class="fa fa-drafting-compass text-white fa-lg"></i>
+                  </div>
+                  <div class="ms-3">
+                    <p class="mb-0">Atendimento</p>
+                    <h5 class="mb-0">Personalizado</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="d-flex align-items-start">
+                  <div
+                    class="btn-lg-square bg-primary rounded-circle flex-shrink-0 d-flex justify-content-center align-items-center"
+                    style="width: 60px; height: 60px;">
+                    <i class="fa fa-headphones text-white fa-lg"></i>
+                  </div>
+                  <div class="ms-3">
+                    <p class="mb-0">Suporte</p>
+                    <h5 class="mb-0">Dedicado</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px">
+          <div class="position-relative h-100">
+            <img class="position-absolute img-fluid w-100 h-100" src="img/back1.jpg" style="object-fit: cover"
+              alt="Máquinas da EcoHarvest em ação" />
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Botão para desktop -->
-            <a href="./cotacao.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
-                Obter uma cotação<i class="fa fa-arrow-right ms-3"></i>
-            </a>
-
-            <!-- Botão para mobile -->
-            <a href="./cotacao.html" class="btn btn-primary w-100 rounded-0 py-3 d-block d-lg-none mt-3">
-                Obter uma cotação<i class="fa fa-arrow-right ms-2"></i>
-            </a>
   </div>
-</nav>
-    <!-- Navbar End -->
+  <!-- About Start -->
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
-      <div class="owl-carousel header-carousel position-relative">
-          
-        <div
-          class="owl-carousel-item position-relative"
-          data-dot="<img src='img/img-back3.jpg'>"
-        >
-          <img class="img-fluid" src="img/img-back3.jpg" alt="" />
-          <div class="overlay"></div>
-          <div class="owl-carousel-inner">
-            <div class="container">
-              <div class="row justify-content-start">
-                <div class="col-10 col-lg-8">
-                  <h1 class="display-2 text-white animated slideInDown">
-                    Pioneiros em Tecnologia Agrícola
-                  </h1>
-                  <p class="fs-5 fw-medium text-white mb-4 pb-3">
-                    Somos referência em inovação para o campo. Equipamentos
-                    modernos que aumentam a produtividade e eficiência,
-                    garantindo o melhor desempenho na lavoura.
-                  </p>
-                  <a
-                    href="./about.html"
-                    class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft"
-                    >Saiba mais</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="owl-carousel-item position-relative"
-          data-dot="<img src='img/img-back2.jpg'>"
-        >
-          <img class="img-fluid" src="img/img-back2.jpg" alt="" />
-          <div class="overlay"></div>
-          <div class="owl-carousel-inner">
-            <div class="container">
-              <div class="row justify-content-start">
-                <div class="col-10 col-lg-8">
-                  <h1 class="display-2 text-white animated slideInDown">
-                    Eficiência e Potência no Campo
-                  </h1>
-                  <p class="fs-5 fw-medium text-white mb-4 pb-3">
-                    Tratores, colheitadeiras e implementos agrícolas de última
-                    geração. Tudo o que você precisa para otimizar o trabalho no
-                    campo com qualidade e durabilidade.
-                  </p>
-                  <a
-                    href="./about.html"
-                    class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft"
-                    >Saiba mais</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="owl-carousel-item position-relative"
-          data-dot="<img src='img/img-back7.jpg'>"
-        >
-          <img class="img-fluid" src="img/img-back7.jpg" alt="" />
-          
-          <div class="owl-carousel-inner">
-            <div class="container">
-              <div class="row justify-content-start">
-                <div class="col-10 col-lg-8">
-                  <h1 class="display-2 text-white animated slideInDown">
-                    Revolucionando a Agricultura
-                  </h1>
-                  <p class="fs-5 fw-medium text-white mb-4 pb-3">
-                    Tecnologia e robustez para o seu dia a dia. Máquinas que
-                    transformam desafios em produtividade, elevando o potencial
-                    da sua colheita.
-                  </p>
-                  <a
-                    href="./about.html"
-                    class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft"
-                    >Saiba mais</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- Service Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
+        <h6 class="text-primary">Nossas Categorias</h6>
+        <h1 class="mb-4">
+          Somos pioneiros no mundo dos Maquinários Agrícolas
+        </h1>
       </div>
-    </div>
-    <!-- Carousel End -->
-
-    <!-- Feature Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-            <div class="d-flex align-items-center mb-4">
-              <div class="btn-lg-square bg-primary rounded-circle me-3">
-                <i class="fa fa-users text-white"></i>
-              </div>
-              <h1 class="mb-0" data-toggle="counter-up">3453</h1>
-            </div>
-            <h5 class="mb-3">Clientes Satisfeitos</h5>
-            <span
-              >Agricultores confiam em nossas máquinas para melhorar sua
-              produção e eficiência no campo.</span
-            >
-          </div>
-          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-            <div class="d-flex align-items-center mb-4">
-              <div class="btn-lg-square bg-primary rounded-circle me-3">
-                <i class="fa fa-check text-white"></i>
-              </div>
-              <h1 class="mb-0" data-toggle="counter-up">4234</h1>
-            </div>
-            <h5 class="mb-3">Projetos Concluídos</h5>
-            <span
-              >Soluções inovadoras entregues para otimizar o trabalho agrícola e
-              aumentar a produtividade.</span
-            >
-          </div>
-          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-            <div class="d-flex align-items-center mb-4">
-              <div class="btn-lg-square bg-primary rounded-circle me-3">
-                <i class="fa fa-award text-white"></i>
-              </div>
-              <h1 class="mb-0" data-toggle="counter-up">3123</h1>
-            </div>
-            <h5 class="mb-3">Prêmios Recebidos</h5>
-            <span
-              >Reconhecidos pela qualidade e inovação no desenvolvimento de
-              equipamentos agrícolas.</span
-            >
-          </div>
-          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-            <div class="d-flex align-items-center mb-4">
-              <div class="btn-lg-square bg-primary rounded-circle me-3">
-                <i class="fa fa-users-cog text-white"></i>
-              </div>
-              <h1 class="mb-0" data-toggle="counter-up">1831</h1>
-            </div>
-            <h5 class="mb-3">Trabalhadores Especializados</h5>
-            <span
-              >Profissionais capacitados garantindo o melhor desempenho e
-              suporte para sua lavoura.</span
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- About Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-      <div class="container feature px-lg-0">
-        <div class="row g-0 mx-lg-0">
-          <div
-            class="col-lg-6 feature-text py-5 wow fadeIn"
-            data-wow-delay="0.1s"
-          >
-            <div class="p-lg-5 ps-lg-0">
-              <h6 class="text-primary">Por que escolher a EcoHarvest?</h6>
-              <h1 class="mb-4">
-                Soluções Completas em Máquinas Agrícolas para o Campo Moderno
-              </h1>
-              <p class="mb-4 pb-2">
-                A EcoHarvest entrega tecnologia e robustez para transformar o
-                dia a dia do produtor. Nossos equipamentos unem inovação,
-                eficiência e confiança para todas as etapas da produção
-                agrícola.
-              </p>
-              <div class="row g-4">
-                <div class="col-6">
-                  <div class="d-flex align-items-center">
-                    <div class="btn-lg-square bg-primary rounded-circle">
-                      <i class="fa fa-check text-white"></i>
-                    </div>
-                    <div class="ms-4">
-                      <p class="mb-0">Alta</p>
-                      <h5 class="mb-0">Qualidade</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="d-flex align-items-center">
-                    <div class="btn-lg-square bg-primary rounded-circle">
-                      <i class="fa fa-user-check text-white"></i>
-                    </div>
-                    <div class="ms-4">
-                      <p class="mb-0">Equipe</p>
-                      <h5 class="mb-0">Especializada</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="d-flex align-items-center">
-                    <div class="btn-lg-square bg-primary rounded-circle">
-                      <i class="fa fa-drafting-compass text-white"></i>
-                    </div>
-                    <div class="ms-4">
-                      <p class="mb-0">Atendimento</p>
-                      <h5 class="mb-0">Personalizado</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="d-flex align-items-center">
-                    <div class="btn-lg-square bg-primary rounded-circle">
-                      <i class="fa fa-headphones text-white"></i>
-                    </div>
-                    <div class="ms-4">
-                      <p class="mb-0">Suporte</p>
-                      <h5 class="mb-0">Dedicado</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-6 pe-lg-0 wow fadeIn"
-            data-wow-delay="0.5s"
-            style="min-height: 400px"
-          >
-            <div class="position-relative h-100">
-              <img
-                class="position-absolute img-fluid w-100 h-100"
-                src="img/back1.jpg"
-                style="object-fit: cover"
-                alt="Máquinas da EcoHarvest em ação"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- About Start -->
-
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 600px"
-        >
-          <h6 class="text-primary">Nossas Categorias</h6>
-          <h1 class="mb-4">
-            Somos pioneiros no mundo dos Maquinários Agrícolas
-          </h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="service-item rounded overflow-hidden"
-              style="height: 100%; max-height: 470px"
-            >
-              <img class="img-fluid" src="img/item-card-3.png" alt="" />
-              <div class="position-relative p-4" style="margin-top: 12px">
-                <h4 class="mb-3">Tratores</h4>
-                <p>
-                  Nossos tratores combinam potência, tecnologia e durabilidade.
-                </p>
-                <a class="small fw-medium" href=""
-                  >Saíba mais<i class="fa fa-arrow-right ms-2"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-            <div
-              class="service-item rounded overflow-hidden"
-              style="height: 100%; max-height: 470px"
-            >
-              <img class="img-fluid" src="img/item-card-1.png" alt="" />
-              <div class="position-relative p-4" style="margin-top: 12px">
-                <h4 class="mb-3">Colheitadeiras</h4>
-                <p>
-                  Nossas colheitadeiras garantem alta performance e precisão na
-                  colheita.
-                </p>
-                <a class="small fw-medium" href="#about"
-                  >Saíba mais<i class="fa fa-arrow-right ms-2"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-            <div
-              class="service-item rounded overflow-hidden"
-              style="max-height: 470px; height: 100%"
-            >
-              <img class="img-fluid" src="img/item-card-2.png" alt="" />
-              <div class="position-relative p-4" style="margin-top: 12px">
-                <h4 class="mb-3">Retroescavadeira</h4>
-                <p>
-                  Nossas retroescavadeira garantem alta produtividade,
-                  maximizando seu poder.
-                </p>
-                <a class="small fw-medium" href="./project.html"
-                  >Saíba mais<i class="fa fa-arrow-right ms-2"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 2 linha de tipos maquinarios -->
-
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="service-item rounded overflow-hidden"
-              style="height: 100%; max-height: 470px"
-            >
-              <img class="img-fluid" src="img/item-card-3.png" alt="" />
-              <div class="position-relative p-4" style="margin-top: 12px">
-                <h4 class="mb-3">Pulverizadores</h4>
-                <p>
-                  Nossos tratores combinam potência, tecnologia e durabilidade.
-                </p>
-                <a class="small fw-medium" href=""
-                  >Saíba mais<i class="fa fa-arrow-right ms-2"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="service-item rounded overflow-hidden"
-              style="height: 100%; max-height: 470px"
-            >
-              <img class="img-fluid" src="img/item-card-3.png" alt="" />
-              <div class="position-relative p-4" style="margin-top: 12px">
-                <h4 class="mb-3">Plantadeiras</h4>
-                <p>
-                  Nossas plantadeiras garantem um plantio preciso, maximizando a
-                  eficiência.
-                </p>
-                <a class="small fw-medium" href=""
-                  >Saíba mais<i class="fa fa-arrow-right ms-2"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="service-item rounded overflow-hidden"
-              style="height: 100%; max-height: 470px"
-            >
-              <img class="img-fluid" src="img/item-card-3.png" alt="" />
-              <div class="position-relative p-4" style="margin-top: 12px">
-                <h4 class="mb-3">Enfardadoras</h4>
-                <p>
-                  Nossas enfardadoras garantem fardos compactos, maximizando o
-                  armazenamento.
-                </p>
-                <a class="small fw-medium" href=""
-                  >Saíba mais<i class="fa fa-arrow-right ms-2"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Service End -->
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 600px"
-        >
-          <h6 class="text-primary">Depoimentos</h6>
-          <h1 class="mb-4">O que nossos clientes dizem!</h1>
-        </div>
-
-        <div
-          class="owl-carousel testimonial-carousel wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <!-- Depoimento 1 -->
-          <div class="testimonial-item text-center">
-            <div class="testimonial-img position-relative">
-              <img
-                class="img-fluid rounded-circle mx-auto mb-5"
-                src="img/testimonial-1.jpg"
-                alt="João Mendes"
-              />
-              <div class="btn-square bg-primary rounded-circle">
-                <i class="fa fa-quote-left text-white"></i>
-              </div>
-            </div>
-            <div class="testimonial-text text-center rounded p-4">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="service-item rounded overflow-hidden" style="height: 100%; max-height: 470px">
+            <img class="img-fluid" src="img/item-card-3.png" alt="" />
+            <div class="position-relative p-4" style="margin-top: 12px">
+              <h4 class="mb-3">Tratores</h4>
               <p>
-                "Nossas colheitas nunca foram tão rápidas e eficientes! A
-                EcoHarvest forneceu uma colheitadeira que fez toda a diferença,
-                aumentando nossa produtividade e reduzindo o tempo de operação.
-                A tecnologia é de ponta e o suporte, impecável!"
+                Nossos tratores combinam potência, tecnologia e durabilidade.
               </p>
-              <h5 class="mb-1">Mariana Silva</h5>
-              <span class="fst-italic">Engenheira Agrônoma - MT</span>
+              <a class="small fw-medium" href="">Saíba mais<i class="fa fa-arrow-right ms-2"></i></a>
             </div>
           </div>
-
-          <!-- Depoimento 2 -->
-          <div class="testimonial-item text-center">
-            <div class="testimonial-img position-relative">
-              <img
-                class="img-fluid rounded-circle mx-auto mb-5"
-                src="img/testimonial-2.jpg"
-                alt="Mariana Silva"
-              />
-              <div class="btn-square bg-primary rounded-circle">
-                <i class="fa fa-quote-left text-white"></i>
-              </div>
-            </div>
-            <div class="testimonial-text text-center rounded p-4">
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="service-item rounded overflow-hidden" style="height: 100%; max-height: 470px">
+            <img class="img-fluid" src="img/item-card-1.png" alt="" />
+            <div class="position-relative p-4" style="margin-top: 12px">
+              <h4 class="mb-3">Colheitadeiras</h4>
               <p>
-                "O trator autônomo da EcoHarvest foi um divisor de águas na
-                nossa fazenda. Reduzi o custo com mão de obra e aumentei a
-                precisão nas operações. Nunca pensei que fosse possível tanta
-                tecnologia aplicada ao campo!"
+                Nossas colheitadeiras garantem alta performance e precisão na
+                colheita.
               </p>
-              <h5 class="mb-1">João Mendes</h5>
-              <span class="fst-italic">Produtor Rural - PR</span>
+              <a class="small fw-medium" href="#about">Saíba mais<i class="fa fa-arrow-right ms-2"></i></a>
             </div>
           </div>
-
-          <!-- Depoimento 3 -->
-          <div class="testimonial-item text-center">
-            <div class="testimonial-img position-relative">
-              <img
-                class="img-fluid rounded-circle mx-auto mb-5"
-                src="img/testimonial-3.jpg"
-                alt="Carlos Albuquerque"
-              />
-              <div class="btn-square bg-primary rounded-circle">
-                <i class="fa fa-quote-left text-white"></i>
-              </div>
-            </div>
-            <div class="testimonial-text text-center rounded p-4">
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="service-item rounded overflow-hidden" style="max-height: 470px; height: 100%">
+            <img class="img-fluid" src="img/item-card-2.png" alt="" />
+            <div class="position-relative p-4" style="margin-top: 12px">
+              <h4 class="mb-3">Retroescavadeira</h4>
               <p>
-                "Além dos equipamentos modernos, o que me surpreendeu foi o
-                atendimento. Tiraram todas as dúvidas, entregaram no prazo e
-                ainda fizeram a instalação completa com treinamento para minha
-                equipe. Parabéns!"
+                Nossas retroescavadeira garantem alta produtividade,
+                maximizando seu poder.
               </p>
-              <h5 class="mb-1">Carlos Albuquerque</h5>
-              <span class="fst-italic">Gestor de Fazenda - GO</span>
+              <a class="small fw-medium" href="./project.html">Saíba mais<i class="fa fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 linha de tipos maquinarios -->
+
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="service-item rounded overflow-hidden" style="height: 100%; max-height: 470px">
+            <img class="img-fluid" src="img/item-card-3.png" alt="" />
+            <div class="position-relative p-4" style="margin-top: 12px">
+              <h4 class="mb-3">Pulverizadores</h4>
+              <p>
+                Nossos tratores combinam potência, tecnologia e durabilidade.
+              </p>
+              <a class="small fw-medium" href="">Saíba mais<i class="fa fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="service-item rounded overflow-hidden" style="height: 100%; max-height: 470px">
+            <img class="img-fluid" src="img/item-card-3.png" alt="" />
+            <div class="position-relative p-4" style="margin-top: 12px">
+              <h4 class="mb-3">Plantadeiras</h4>
+              <p>
+                Nossas plantadeiras garantem um plantio preciso, maximizando a
+                eficiência.
+              </p>
+              <a class="small fw-medium" href="">Saíba mais<i class="fa fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="service-item rounded overflow-hidden" style="height: 100%; max-height: 470px">
+            <img class="img-fluid" src="img/item-card-3.png" alt="" />
+            <div class="position-relative p-4" style="margin-top: 12px">
+              <h4 class="mb-3">Enfardadoras</h4>
+              <p>
+                Nossas enfardadoras garantem fardos compactos, maximizando o
+                armazenamento.
+              </p>
+              <a class="small fw-medium" href="">Saíba mais<i class="fa fa-arrow-right ms-2"></i></a>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <!-- Service End -->
 
-    <!-- Testimonial End -->
+  <!-- Testimonial Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
+        <h6 class="text-primary">Depoimentos</h6>
+        <h1 class="mb-4">O que nossos clientes dizem!</h1>
+      </div>
 
-    <section class="py-5 bg-light">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="fw-bold">
-            <span class="text-success">Nossas</span> Notícias
-          </h2>
-          <p class="text-muted">
-            Fique por dentro das últimas novidades sobre inovações e tecnologias
-            em maquinário agrícola.
+      <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+        <!-- Depoimento 1 -->
+        <div class="testimonial-item text-center">
+          <div class="testimonial-img position-relative">
+            <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-1.jpg" alt="João Mendes" />
+            <div class="btn-square bg-primary rounded-circle">
+              <i class="fa fa-quote-left text-white"></i>
+            </div>
+          </div>
+          <div class="testimonial-text text-center rounded p-4">
+            <p>
+              "Nossas colheitas nunca foram tão rápidas e eficientes! A
+              EcoHarvest forneceu uma colheitadeira que fez toda a diferença,
+              aumentando nossa produtividade e reduzindo o tempo de operação.
+              A tecnologia é de ponta e o suporte, impecável!"
+            </p>
+            <h5 class="mb-1">Mariana Silva</h5>
+            <span class="fst-italic">Engenheira Agrônoma - MT</span>
+          </div>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div class="testimonial-item text-center">
+          <div class="testimonial-img position-relative">
+            <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-2.jpg" alt="Mariana Silva" />
+            <div class="btn-square bg-primary rounded-circle">
+              <i class="fa fa-quote-left text-white"></i>
+            </div>
+          </div>
+          <div class="testimonial-text text-center rounded p-4">
+            <p>
+              "O trator autônomo da EcoHarvest foi um divisor de águas na
+              nossa fazenda. Reduzi o custo com mão de obra e aumentei a
+              precisão nas operações. Nunca pensei que fosse possível tanta
+              tecnologia aplicada ao campo!"
+            </p>
+            <h5 class="mb-1">João Mendes</h5>
+            <span class="fst-italic">Produtor Rural - PR</span>
+          </div>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div class="testimonial-item text-center">
+          <div class="testimonial-img position-relative">
+            <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-3.jpg" alt="Carlos Albuquerque" />
+            <div class="btn-square bg-primary rounded-circle">
+              <i class="fa fa-quote-left text-white"></i>
+            </div>
+          </div>
+          <div class="testimonial-text text-center rounded p-4">
+            <p>
+              "Além dos equipamentos modernos, o que me surpreendeu foi o
+              atendimento. Tiraram todas as dúvidas, entregaram no prazo e
+              ainda fizeram a instalação completa com treinamento para minha
+              equipe. Parabéns!"
+            </p>
+            <h5 class="mb-1">Carlos Albuquerque</h5>
+            <span class="fst-italic">Gestor de Fazenda - GO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonial End -->
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">
+          <span class="text-success">Nossas</span> Notícias
+        </h2>
+        <p class="text-muted">
+          Fique por dentro das últimas novidades sobre inovações e tecnologias
+          em maquinário agrícola.
+        </p>
+      </div>
+
+      <div class="row">
+        <!-- Notícia 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://imagens-cdn.canalrural.com.br/2024/10/B63OWyan-20fbff3358f5b183aa8902c17de6a59b-scaled.jpg"
+              class="card-img-top" alt="Trator Elétrico John Deere" />
+            <div class="card-body">
+              <h5 class="card-title text-primary">
+                John Deere apresenta trator elétrico para agricultura
+                sustentável
+              </h5>
+              <p class="small text-muted mb-2">
+                <i class="fas fa-user"></i> Canal Rural &nbsp;
+                <i class="fas fa-calendar-alt"></i> 20 Maio, 2025
+              </p>
+              <p class="card-text">
+                Novo modelo elétrico promete reduzir emissões e custos
+                operacionais com autonomia para 8 horas de trabalho.
+              </p>
+              <a href="https://www.canalrural.com.br/agricultura/john-deere-apresenta-trator-autonomo-e-drone-gigante-em-feira-europeia/"
+                target="_blank" class="small fw-medium">
+
+                Saíba mais<i class="fa fa-arrow-right ms-2"></i></a>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notícia 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://veja.abril.com.br/wp-content/uploads/2024/04/GettyImages-1447011226.jpg.jpg?quality=90&strip=info"
+              class="card-img-top" alt="Colheitadeira com IA" />
+            <div class="card-body">
+              <h5 class="card-title text-primary">
+                Máquinas agrícolas ganham inteligência artificial para
+                aumentar produtividade
+              </h5>
+              <p class="small text-muted mb-2">
+                <i class="fas fa-user"></i> Embrapa &nbsp;
+                <i class="fas fa-calendar-alt"></i> 12 Abril, 2025
+              </p>
+              <p class="card-text">
+                Sistemas embarcados com IA permitem monitoramento de solo,
+                clima e rendimento em tempo real.
+              </p>
+              <a href="https://ainfo.cnptia.embrapa.br/digital/bitstream/doc/1170729/1/P-Inteligencia-artificial-aplicada-na.pdf"
+                target="_blank" class="small fw-medium">
+                Saíba mais<i class="fa fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notícia 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://www.produzindocerto.com.br/wp-content/uploads/2022/06/blog-IG-dicionagro-17-06-1024x576.jpg"
+              class="card-img-top" alt="Pulverizador com GPS" />
+            <div class="card-body">
+              <h5 class="card-title text-primary">
+                Agricultura de precisão reduz uso de defensivos em até 40%
+              </h5>
+              <p class="small text-muted mb-2">
+                <i class="fas fa-user"></i> Revista Globo Rural &nbsp;
+                <i class="fas fa-calendar-alt"></i> 05 Abril, 2025
+              </p>
+              <p class="card-text">
+                Uso de pulverizadores com GPS e sensores inteligentes permite
+                aplicação exata, reduzindo impacto ambiental.
+              </p>
+              <a href="https://globorural.globo.com/Noticias/Opiniao/Vozes-do-Agro/noticia/2022/02/agricultura-de-precisao-tecnologia-e-dados-ajudam-gerenciar-insumos-escassos.html"
+                target="_blank" class="small fw-medium">
+                Saíba mais<i class="fa fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Início do Rodapé -->
+  <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <!-- Contato -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-4">Endereço</h5>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>1233 - Presidente
+            Prudente, São Paulo, BR
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i>(18)99232-0208
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-envelope me-3"></i>contato@ecoharvest.com.br
           </p>
         </div>
 
-        <div class="row">
-          <!-- Notícia 1 -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm">
-              <img
-                src="https://imagens-cdn.canalrural.com.br/2024/10/B63OWyan-20fbff3358f5b183aa8902c17de6a59b-scaled.jpg"
-                class="card-img-top"
-                alt="Trator Elétrico John Deere"
-              />
-              <div class="card-body">
-                <h5 class="card-title text-primary">
-                  John Deere apresenta trator elétrico para agricultura
-                  sustentável
-                </h5>
-                <p class="small text-muted mb-2">
-                  <i class="fas fa-user"></i> Canal Rural &nbsp;
-                  <i class="fas fa-calendar-alt"></i> 20 Maio, 2025
-                </p>
-                <p class="card-text">
-                  Novo modelo elétrico promete reduzir emissões e custos
-                  operacionais com autonomia para 8 horas de trabalho.
-                </p>
-                <a
-                  href="https://www.canalrural.com.br/agricultura/john-deere-apresenta-trator-autonomo-e-drone-gigante-em-feira-europeia/"
-                  target="_blank"
-                  class="small fw-medium"
-                >
-                  
-                    Saíba mais<i class="fa fa-arrow-right ms-2"></i
-                  ></a>
-                </a>
-              </div>
-            </div>
-          </div>
+        <!-- Links rápidos -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-4">Links Rápidos</h5>
+          <a class="btn btn-link" href="/ecoHarvest_2/about.html">Sobre Nós</a>
+          <a class="btn btn-link" href="/ecoHarvest_2/contact.html">Contato</a>
+          <a class="btn btn-link" href="/ecoHarvest_2/project.html">Maquinarios</a>
+          <a class="btn btn-link" href="/ecoHarvest_2/contact.html">Lojas</a>
 
-          <!-- Notícia 2 -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm">
-              <img
-                src="https://veja.abril.com.br/wp-content/uploads/2024/04/GettyImages-1447011226.jpg.jpg?quality=90&strip=info"
-                class="card-img-top"
-                alt="Colheitadeira com IA"
-              />
-              <div class="card-body">
-                <h5 class="card-title text-primary">
-                  Máquinas agrícolas ganham inteligência artificial para
-                  aumentar produtividade
-                </h5>
-                <p class="small text-muted mb-2">
-                  <i class="fas fa-user"></i> Embrapa &nbsp;
-                  <i class="fas fa-calendar-alt"></i> 12 Abril, 2025
-                </p>
-                <p class="card-text">
-                  Sistemas embarcados com IA permitem monitoramento de solo,
-                  clima e rendimento em tempo real.
-                </p>
-                <a
-                  href="https://ainfo.cnptia.embrapa.br/digital/bitstream/doc/1170729/1/P-Inteligencia-artificial-aplicada-na.pdf"
-                  target="_blank"
-                  class="small fw-medium"
-                >
-                  Saíba mais<i class="fa fa-arrow-right ms-2"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+        </div>
 
-          <!-- Notícia 3 -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm">
-              <img
-                src="https://www.produzindocerto.com.br/wp-content/uploads/2022/06/blog-IG-dicionagro-17-06-1024x576.jpg"
-                class="card-img-top"
-                alt="Pulverizador com GPS"
-              />
-              <div class="card-body">
-                <h5 class="card-title text-primary">
-                  Agricultura de precisão reduz uso de defensivos em até 40%
-                </h5>
-                <p class="small text-muted mb-2">
-                  <i class="fas fa-user"></i> Revista Globo Rural &nbsp;
-                  <i class="fas fa-calendar-alt"></i> 05 Abril, 2025
-                </p>
-                <p class="card-text">
-                  Uso de pulverizadores com GPS e sensores inteligentes permite
-                  aplicação exata, reduzindo impacto ambiental.
-                </p>
-                <a
-                  href="https://globorural.globo.com/Noticias/Opiniao/Vozes-do-Agro/noticia/2022/02/agricultura-de-precisao-tecnologia-e-dados-ajudam-gerenciar-insumos-escassos.html"
-                  target="_blank"
-                  class="small fw-medium"
-                >
-                  Saíba mais<i class="fa fa-arrow-right ms-2"></i>
-                </a>
-              </div>
+        <!-- Galeria -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-4">Galeria de Projetos</h5>
+          <div class="row g-2">
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back0.jpg" alt="" />
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back4.jpg" alt="" />
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back3.jpg" alt="" />
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back5.jpg" alt="" />
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back10.jpg" alt="" />
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back12.jpg" alt="" />
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Início do Rodapé -->
-    <div
-      class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <!-- Contato -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-white mb-4">Endereço</h5>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>1233 - Presidente
-              Prudente, São Paulo, BR
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>(18)99232-0208
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>contato@ecoharvest.com.br
-            </p>
-          </div>
-
-          <!-- Links rápidos -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-white mb-4">Links Rápidos</h5>
-            <a class="btn btn-link" href="/ecoHarvest_2/about.html"
-              >Sobre Nós</a
-            >
-            <a class="btn btn-link" href="/ecoHarvest_2/contact.html"
-              >Contato</a
-            >
-            <a class="btn btn-link" href="/ecoHarvest_2/project.html">Maquinarios</a>
-            <a class="btn btn-link" href="/ecoHarvest_2/contact.html">Lojas</a>
-
-          </div>
-
-          <!-- Galeria -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-white mb-4">Galeria de Projetos</h5>
-            <div class="row g-2">
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back0.jpg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back4.jpg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back3.jpg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back5.jpg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back10.jpg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back12.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-
-          <!-- Newsletter -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-white mb-4">Receba Novidades</h5>
-            <p>
-              Inscreva-se e fique por dentro das últimas tendências do
-              agronegócio sustentável.
-            </p>
-            <div class="position-relative mx-auto" style="max-width: 400px">
-              <input
-                class="form-control border-0 w-100 py-3 ps-4 pe-5"
-                type="text"
-                placeholder="Seu e-mail"
-              />
-              <button
-                type="button"
-                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-              >
-                <a href="./cadastro.html" class="text-white">Inscrever-se</a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Créditos -->
-      <div class="container">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a href="#">EcoHarvest</a> - Todos os direitos reservados.
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              Desenvolvido por <a href="#">Syntex</a><br />
-              Distribuído por: <a href="#" target="_blank">Syntex</a>
-            </div>
+        <!-- Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-4">Receba Novidades</h5>
+          <p>
+            Inscreva-se e fique por dentro das últimas tendências do
+            agronegócio sustentável.
+          </p>
+          <div class="position-relative mx-auto" style="max-width: 400px">
+            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Seu e-mail" />
+            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+              <a href="./cadastro.html" class="text-white">Inscrever-se</a>
+            </button>
           </div>
         </div>
       </div>
     </div>
-    <!-- Fim do Rodapé -->
 
-    <!-- Back to Top -->
-    <a
-      href="#"
-      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
+    <!-- Créditos -->
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a href="#">EcoHarvest</a> - Todos os direitos reservados.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            Desenvolvido por <a href="#">Syntex</a><br />
+            Distribuído por: <a href="#" target="_blank">Syntex</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim do Rodapé -->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
