@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Solartec - Renewable Energy Website Template</title>
+    <title>EcoHarvest</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -70,66 +70,61 @@
           </div>
         </div>
         <div class="col-lg-5 px-5 text-end">
-          <div class="h-100 d-inline-flex align-items-center me-4">
+          <div class="h-100 d-inline-flex align-items-center me-4 py-2">
             <small class="fa fa-phone-alt text-primary me-2"></small>
             <small>+018 3909 6789</small>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center mx-n2">
-            <a
-              class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary"
-              href=""
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary"
-              href=""
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary"
-              href=""
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a class="btn btn-square btn-link rounded-0" href=""
-              ><i class="fab fa-instagram"></i
-            ></a>
           </div>
         </div>
       </div>
     </div>
     <!-- Topbar End -->
 
-    <!-- Navbar Start -->
+   <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-      <a
-        href="index.html"
-        class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5"
-      >
-        <h2 class="m-0 text-primary">EcoHarvest</h2>
-      </a>
-      <button
-        type="button"
-        class="navbar-toggler me-4"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link">Home</a>
-          <a href="about.html" class="nav-item nav-link active">Sobre</a>
-          <a href="project.html" class="nav-item nav-link">Maquinários</a>
+  <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+    <h2 class="m-0 text-primary">EcoHarvest</h2>
+  </a>
 
-          <a href="contact.html" class="nav-item nav-link">Contato</a>
-        </div>
-        <a
-          href="./cotacao.html"
-          class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
-          >Obter uma cotação<i class="fa fa-arrow-right ms-3"></i
-        ></a>
-      </div>
-    </nav>
+  <!-- Ícone de usuário com dropdown -->
+  <div class="dropdown d-flex align-items-center me-auto ms-2">
+    <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa fa-user fa-lg text-primary"></i>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+      <li><span class="dropdown-item-text">Olá, João</span></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="./sobreuser.html">Meu perfil</a></li>
+      <li><a class="dropdown-item" href="./login.html">Sair</a></li>
+    </ul>
+  </div>
+
+  <button
+    type="button"
+    class="navbar-toggler me-4"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarCollapse"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav ms-auto p-4 p-lg-0">
+      <a href="index.html" class="nav-item nav-link ">Home</a>
+      <a href="about.html" class="nav-item nav-link active">Sobre</a>
+      <a href="project.html" class="nav-item nav-link">Maquinários</a>
+      <a href="contact.html" class="nav-item nav-link">Lojas</a>
+    </div>
+    <!-- Botão para desktop -->
+            <a href="./cotacao.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+                Obter uma cotação<i class="fa fa-arrow-right ms-3"></i>
+            </a>
+
+            <!-- Botão para mobile -->
+            <a href="./cotacao.html" class="btn btn-primary w-100 rounded-0 py-3 d-block d-lg-none mt-3">
+                Obter uma cotação<i class="fa fa-arrow-right ms-2"></i>
+            </a>
+  </div>
+</nav>
     <!-- Navbar End -->
 
     <!-- Page Header Start -->
@@ -139,7 +134,7 @@
         <nav aria-label="breadcrumb animated slideInDown">
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a class="text-white" href="#">Home</a>
+              <span class="text-white">Home</span>
             </li>
             <li class="breadcrumb-item text-white active" aria-current="page">
               Sobre
@@ -152,18 +147,19 @@
 
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
-        <div class="row position-relative">
+        <div class="row position-relative ">
           <div
-            class="col-lg-7 about-img"
+            class="col-lg-7 about-img "
             style="background-image: url(img/back4.jpg)"
-          ></div>
+          >
+        </div>
 
           <div class="col-lg-7">
             <h2>Eco Harvest</h2>
             <div class="our-story">
-              <h4>Desde 2015</h4>
-              <h3>Nossa História</h3>
-              <p>
+              <h4 class="text-dark">Desde 2015</h4>
+              <h3 class="text-dark">Nossa História</h3>
+              <p class="text-dark"> 
                 A EcoHarvest nasceu com o propósito de impulsionar o agronegócio
                 por meio de máquinas agrícolas modernas, duráveis e acessíveis.
                 Com foco no produtor rural, desenvolvemos soluções que aumentam
@@ -171,27 +167,27 @@
               </p>
               <ul>
                 <li>
-                  <i class="bi bi-check-circle"></i>
+                  <i class="bi bi-check-circle text-success"></i>
                   <span
-                    >Equipamentos de alto desempenho para diversas
+                    class="text-dark">Equipamentos de alto desempenho para diversas
                     culturas</span
                   >
                 </li>
                 <li>
-                  <i class="bi bi-check-circle"></i>
+                  <i class="bi bi-check-circle text-success"></i>
                   <span
-                    >Suporte técnico especializado e atendimento próximo</span
+                    class="text-dark">Suporte técnico especializado e atendimento próximo</span
                   >
                 </li>
                 <li>
-                  <i class="bi bi-check-circle"></i>
+                  <i class="bi bi-check-circle text-success"></i>
                   <span
-                    >Compromisso com a inovação e sustentabilidade no
+                    class="text-dark">Compromisso com a inovação e sustentabilidade no
                     campo</span
                   >
                 </li>
               </ul>
-              <p>
+              <p class="text-dark">
                 Com a confiança de agricultores de todo o Brasil, seguimos
                 evoluindo e cultivando parcerias sólidas. Acreditamos que
                 máquinas eficientes são parte essencial de uma colheita de
@@ -215,9 +211,9 @@
               </div>
               <h1 class="mb-0" data-toggle="counter-up">3453</h1>
             </div>
-            <h5 class="mb-3">Clientes Satisfeitos</h5>
+            <h5 class="mb-3 ">Clientes Satisfeitos</h5>
             <span
-              >Mais de 3 mil produtores confiam na qualidade EcoHarvest no
+              class="text-dark">Mais de 3 mil produtores confiam na qualidade EcoHarvest no
               campo.</span
             >
           </div>
@@ -230,7 +226,7 @@
             </div>
             <h5 class="mb-3">Máquinas Entregues</h5>
             <span
-              >Equipamentos prontos para transformar a produção agrícola.</span
+               class="text-dark">Equipamentos prontos para transformar a produção agrícola.</span
             >
           </div>
           <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
@@ -242,7 +238,7 @@
             </div>
             <h5 class="mb-3">Reconhecimentos</h5>
             <span
-              >Prêmios que refletem nosso compromisso com a excelência no
+               class="text-dark">Prêmios que refletem nosso compromisso com a excelência no
               campo.</span
             >
           </div>
@@ -255,7 +251,7 @@
             </div>
             <h5 class="mb-3">Especialistas no Campo</h5>
             <span
-              >Equipe preparada para oferecer as melhores soluções
+               class="text-dark">Equipe preparada para oferecer as melhores soluções
               agrícolas.</span
             >
           </div>
@@ -294,21 +290,21 @@
               <h1 class="mb-4">
                 Mais de 25 anos de inovação no setor agrícola
               </h1>
-              <p>
+              <p  class="text-dark">
                 Fornecemos máquinas agrícolas de alta performance, projetadas
                 para aumentar sua produtividade com robustez e tecnologia de
                 ponta. Estamos ao lado do produtor em todas as etapas da
                 lavoura.
               </p>
-              <p>
+              <p  class="text-dark">
                 <i class="fa fa-check-circle text-primary me-3"></i>Potência e
                 eficiência no campo
               </p>
-              <p>
+              <p  class="text-dark">
                 <i class="fa fa-check-circle text-primary me-3"></i>Tecnologia
                 de ponta para o agronegócio
               </p>
-              <p>
+              <p  class="text-dark">
                 <i class="fa fa-check-circle text-primary me-3"></i>Soluções
                 robustas para alta produtividade
               </p>
@@ -353,8 +349,8 @@
               />
               <div class="p-4 text-center">
                 <h5 class="mb-1">André Oliveira</h5>
-                <span class="text-muted">Diretor Técnico</span>
-                <p class="mt-3 mb-0 small">
+                <span class="text-muted ">Diretor Técnico</span>
+                <p class="mt-3 mb-0 small text-dark" >
                   Com mais de 20 anos de experiência em engenharia agrícola,
                   André lidera projetos que transformam tecnologia em
                   produtividade.
@@ -373,8 +369,8 @@
               />
               <div class="p-4 text-center">
                 <h5 class="mb-1">Fernando Lima</h5>
-                <span class="text-muted">Consultora Agrícola</span>
-                <p class="mt-3 mb-0 small">
+                <span class="text-muted">Consultor Agrícola</span>
+                <p class="mt-3 mb-0 small text-dark">
                   Especialista em agronegócio sustentável, Fernando orienta
                   nossos clientes com foco em soluções práticas e eficientes.
                 </p>
@@ -393,7 +389,7 @@
               <div class="p-4 text-center">
                 <h5 class="mb-1">Rafael Souza</h5>
                 <span class="text-muted">Engenheiro de Campo</span>
-                <p class="mt-3 mb-0 small">
+                <p class="mt-3 mb-0 small text-dark">
                   Responsável por testes em campo e acompanhamento técnico,
                   Rafael garante o máximo desempenho dos nossos equipamentos.
                 </p>
@@ -405,7 +401,7 @@
     </div>
     <!-- Fim da Equipe -->
 
-    <!-- Início do Rodapé -->
+     <!-- Início do Rodapé -->
     <div
       class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn"
       data-wow-delay="0.1s"
@@ -436,8 +432,7 @@
             <a class="btn btn-link" href="/ecoHarvest_2/contact.html"
               >Contato</a
             >
-            <a class="btn btn-link" href="#">Termos e Condições</a>
-            <a class="btn btn-link" href="#">Suporte</a>
+            <a class="btn btn-link" href="/ecoHarvest_2/project.html">Maquinarios</a>
           </div>
 
           <!-- Galeria -->
@@ -482,7 +477,7 @@
                 type="button"
                 class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
               >
-                Inscrever-se
+                <a href="./cadastro.html" class="text-white">Inscrever-se</a>
               </button>
             </div>
           </div>

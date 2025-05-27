@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login - Eco Harvest</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        position: relative;
+        height: 100vh;
+        background: url("./img/back2.jpg") no-repeat center center;
+        background-size: cover;
+      }
+      .error-message {
+        color: red;
+        font-size: 0.875rem;
+        margin-top: 5px;
+      }
+      .is-invalid {
+        border: 2px solid red !important;
+      }
+      .background-blur {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("./img/back2.jpg") no-repeat center center;
+        background-size: cover;
+        filter: blur(8px);
+        z-index: -1;
+      }
+      .login-container {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 1000px;
+        width: 100%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      .image-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .login-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .logo-overlay {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 80px;
+        height: auto;
+      }
+      @media (min-width: 768px) {
+        .image-container {
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-blur"></div>
+
+    <div
+      class="container d-flex justify-content-center align-items-center vh-100"
+    >
+      <div class="row login-container">
+        <div class="col-md-5 d-none d-md-block p-0">
+          <div class="image-container">
+            <img src="./img/back12.jpg" class="login-img" alt="Trator" />
+          </div>
+        </div>
+        <div class="col-md-7 p-5">
+          <h3 class="text-center fw-bold">LOGIN</h3>
+          <form id="loginForm">
+            <div class="mb-3">
+              <label class="form-label">Usuário</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="usuario234@gmail.com"
+              />
+              <div class="error-message" id="emailError"></div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Senha</label>
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                placeholder="Senha"
+              />
+              <div class="error-message" id="passwordError"></div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div><input type="checkbox" /> Lembrar-me</div>
+              <a href="#" class="text-success text-decoration-none"
+                >Esqueceu a Senha?</a
+              >
+            </div>
+            <button
+              type="submit"
+              href="/index.html"
+              class="btn btn-success w-100 fw-bold"
+            >
+              Entrar
+            </button>
+            <div class="text-center mt-3">
+              <p>
+                Não tem uma conta?
+                <a href="./cadastro.html" class="text-success fw-bold"
+                  >Inscrever-se</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/login.js"></script>
+  </body>
+</html>

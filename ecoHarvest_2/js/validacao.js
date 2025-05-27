@@ -74,17 +74,31 @@ function marcarCampoInvalido(campo) {
 
 //valida o campo nome quando aperta tab
 const nome = document.getElementById('nome');
+
+function validarNome(nome) {
+    // Remove espaços no começo e no fim
+    nome = nome.trim();
+    
+    // Regex: apenas letras e espaços únicos entre nomes
+    const regex = /^[A-Za-zÀ-ÖØ-öø-ÿ]+(?: [A-Za-zÀ-ÖØ-öø-ÿ]+)*$/;
+    
+    return regex.test(nome);
+}
+
+
 nome.addEventListener('blur', () => {
-  if (nome.value.length < 2) {
-    nome.classList.remove('is-valid');
-    nome.classList.add('is-invalid');
-    valido = false;
-    console.log("oi");
-  } else {
-    nome.classList.remove('is-invalid');
-    nome.classList.add('is-valid');
-    valido = true;
-  }
+    const valorNome = nome.value.trim();
+    
+    if (valorNome.length < 2 || !validarNome(valorNome)) {
+        nome.classList.remove('is-valid');
+        nome.classList.add('is-invalid');
+        valido = false;
+        console.log("Nome inválido");
+    } else {
+        nome.classList.remove('is-invalid');
+        nome.classList.add('is-valid');
+        valido = true;
+    }
 });
 
 
@@ -261,6 +275,38 @@ telefone.addEventListener('blur', () => {
   }
 });
 
+let telefone2Valido = false;
+
+const telefone2 = document.getElementById('telefone2');
+
+telefone2.addEventListener('input', () => {
+  let value = telefone2.value.replace(/\D/g, '');
+
+  if (value.length > 10) value = value.slice(0, 10); 
+
+  
+  value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
+  value = value.replace(/(\d{4})(\d)/, '$1-$2');
+
+  telefone2.value = value;
+});
+
+telefone2.addEventListener('blur', () => {
+  
+  const telefoneFixoRegex = /^\(\d{2}\)\s?\d{4}-\d{4}$/;
+
+  if (telefoneFixoRegex.test(telefone2.value)) {
+    telefone2.classList.remove('is-invalid');
+    telefone2.classList.add('is-valid');
+    telefone2Valido = true;
+  } else {
+    telefone2.classList.remove('is-valid');
+    telefone2.classList.add('is-invalid');
+    telefone2Valido = false;
+  }
+});
+
+
 //validando o numero da residencia
 const nro = document.getElementById('numeroCasa');
 
@@ -333,7 +379,7 @@ nroQuantidade.addEventListener('input', () => {
 
 
   if (valorQuant.length > 4 || parseInt(valorQuant) > 9999) {
-    valorQuant = valor.slice(0, 4);
+    valorQuant = valorQuant.slice(0, 4);
   }
 
   nroQuantidade.value = valorQuant;

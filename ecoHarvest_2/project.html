@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Solartec - Renewable Energy Website Template</title>
+    <title>EcoHarvest</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -56,7 +56,7 @@
     </div>
     <!-- Spinner End -->
 
-    <!-- Topbar Start -->
+   <!-- Topbar Start -->
     <div class="container-fluid bg-dark p-0">
       <div class="row gx-0 d-none d-lg-flex">
         <div class="col-lg-7 px-5 text-start">
@@ -70,29 +70,9 @@
           </div>
         </div>
         <div class="col-lg-5 px-5 text-end">
-          <div class="h-100 d-inline-flex align-items-center me-4">
+          <div class="h-100 d-inline-flex align-items-center me-4 py-2">
             <small class="fa fa-phone-alt text-primary me-2"></small>
             <small>+018 3909 6789</small>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center mx-n2">
-            <a
-              class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary"
-              href=""
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary"
-              href=""
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary"
-              href=""
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a class="btn btn-square btn-link rounded-0" href=""
-              ><i class="fab fa-instagram"></i
-            ></a>
           </div>
         </div>
       </div>
@@ -101,37 +81,50 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-      <a
-        href="index.html"
-        class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5"
-      >
-        <h2 class="m-0 text-primary">EcoHarvest</h2>
-      </a>
-      <button
-        type="button"
-        class="navbar-toggler me-4"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link">Home</a>
-          <a href="about.html" class="nav-item nav-link">Sobre</a>
-          <a href="project.html" class="nav-item nav-link active"
-            >Maquinários</a
-          >
+  <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+    <h2 class="m-0 text-primary">EcoHarvest</h2>
+  </a>
 
-          <a href="contact.html" class="nav-item nav-link">Contato</a>
-        </div>
-        <a
-          href="./cotacao.html"
-          class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
-          >Obter uma cotação<i class="fa fa-arrow-right ms-3"></i
-        ></a>
-      </div>
-    </nav>
+  <!-- Ícone de usuário com dropdown -->
+  <div class="dropdown d-flex align-items-center me-auto ms-2">
+    <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa fa-user fa-lg text-primary"></i>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+      <li><span class="dropdown-item-text">Olá, João</span></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="./sobreuser.html">Meu perfil</a></li>
+      <li><a class="dropdown-item" href="./login.html">Sair</a></li>
+    </ul>
+  </div>
+
+  <button
+    type="button"
+    class="navbar-toggler me-4"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarCollapse"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav ms-auto p-4 p-lg-0">
+      <a href="index.html" class="nav-item nav-link ">Home</a>
+      <a href="about.html" class="nav-item nav-link">Sobre</a>
+      <a href="project.html" class="nav-item nav-link active">Maquinários</a>
+      <a href="contact.html" class="nav-item nav-link">Lojas</a>
+    </div>
+   <!-- Botão para desktop -->
+            <a href="./cotacao.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+                Obter uma cotação<i class="fa fa-arrow-right ms-3"></i>
+            </a>
+
+            <!-- Botão para mobile -->
+            <a href="./cotacao.html" class="btn btn-primary w-100 rounded-0 py-3 d-block d-lg-none mt-3">
+                Obter uma cotação<i class="fa fa-arrow-right ms-2"></i>
+            </a>
+  </div>
+</nav>
     <!-- Navbar End -->
 
     <!-- Page Header Start -->
@@ -143,7 +136,7 @@
         <nav aria-label="breadcrumb animated slideInDown">
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a class="text-white" href="#">Home</a>
+              <span class="text-white">Home</span>
             </li>
 
             <li class="breadcrumb-item text-white active" aria-current="page">
@@ -510,8 +503,7 @@
             <a class="btn btn-link" href="/ecoHarvest_2/contact.html"
               >Contato</a
             >
-            <a class="btn btn-link" href="#">Termos e Condições</a>
-            <a class="btn btn-link" href="#">Suporte</a>
+            <a class="btn btn-link" href="/ecoHarvest_2/project.html">Maquinarios</a>
           </div>
 
           <!-- Galeria -->
@@ -538,6 +530,7 @@
               </div>
             </div>
           </div>
+
           <!-- Newsletter -->
           <div class="col-lg-3 col-md-6">
             <h5 class="text-white mb-4">Receba Novidades</h5>
@@ -555,7 +548,7 @@
                 type="button"
                 class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
               >
-                Inscrever-se
+               <a href="./cadastro.html" class="text-white">Inscrever-se</a>
               </button>
             </div>
           </div>
