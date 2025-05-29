@@ -1,179 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>EcoHarvest</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+<head>
+  <meta charset="utf-8" />
+  <title>EcoHarvest</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+    rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-  <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-border text-primary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-      >
-        <span class="sr-only">Loading...</span>
-      </div>
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
-    <!-- Spinner End -->
+  </div>
+  <!-- Spinner End -->
 
-   <!-- Topbar Start -->
-    <div class="container-fluid bg-dark p-0">
-      <div class="row gx-0 d-none d-lg-flex">
-        <div class="col-lg-7 px-5 text-start">
-          <div class="h-100 d-inline-flex align-items-center me-4">
-            <small class="fa fa-map-marker-alt text-primary me-2"></small>
-            <small>1233 Presidente Prudente, São Paulo, BR</small>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center">
-            <small class="far fa-clock text-primary me-2"></small>
-            <small>Seg - Sex: 09.00 AM - 18.00 PM</small>
-          </div>
+  <!-- Topbar Start -->
+  <div class="container-fluid bg-dark p-0">
+    <div class="row gx-0 d-none d-lg-flex">
+      <div class="col-lg-7 px-5 text-start">
+        <div class="h-100 d-inline-flex align-items-center me-4">
+          <small class="fa fa-map-marker-alt text-primary me-2"></small>
+          <small>1233 Presidente Prudente, São Paulo, BR</small>
         </div>
-        <div class="col-lg-5 px-5 text-end">
-          <div class="h-100 d-inline-flex align-items-center me-4 py-2">
-            <small class="fa fa-phone-alt text-primary me-2"></small>
-            <small>+018 3909 6789</small>
-          </div>
+        <div class="h-100 d-inline-flex align-items-center">
+          <small class="far fa-clock text-primary me-2"></small>
+          <small>Seg - Sex: 09.00 AM - 18.00 PM</small>
+        </div>
+      </div>
+      <div class="col-lg-5 px-5 text-end">
+        <div class="h-100 d-inline-flex align-items-center me-4 py-2">
+          <small class="fa fa-phone-alt text-primary me-2"></small>
+          <small>+018 3909 6789</small>
         </div>
       </div>
     </div>
-    <!-- Topbar End -->
+  </div>
+  <!-- Topbar End -->
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-  <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-    <h2 class="m-0 text-primary">EcoHarvest</h2>
-  </a>
-
-  <!-- Ícone de usuário com dropdown -->
-  <div class="dropdown d-flex align-items-center me-auto ms-2">
-    <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="fa fa-user fa-lg text-primary"></i>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+      <h2 class="m-0 text-primary">EcoHarvest</h2>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-      <li><span class="dropdown-item-text">Olá, João</span></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="./sobreuser.html">Meu perfil</a></li>
-      <li><a class="dropdown-item" href="./login.html">Sair</a></li>
-    </ul>
-  </div>
 
-  <button
-    type="button"
-    class="navbar-toggler me-4"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarCollapse"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <div class="navbar-nav ms-auto p-4 p-lg-0">
-      <a href="index.html" class="nav-item nav-link ">Home</a>
-      <a href="about.html" class="nav-item nav-link">Sobre</a>
-      <a href="project.html" class="nav-item nav-link active">Maquinários</a>
-      <a href="contact.html" class="nav-item nav-link">Lojas</a>
+    <!-- Ícone de usuário com dropdown -->
+    <div class="dropdown d-flex align-items-center me-auto ms-2">
+      <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="userDropdown"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa fa-user fa-lg text-primary"></i>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+        <li><span class="dropdown-item-text">Olá, João</span></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="./sobreuser.html">Meu perfil</a></li>
+        <li><a class="dropdown-item" href="./login.html">Sair</a></li>
+      </ul>
     </div>
-   <!-- Botão para desktop -->
-            <a href="./cotacao.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
-                Obter uma cotação<i class="fa fa-arrow-right ms-3"></i>
-            </a>
 
-            <!-- Botão para mobile -->
-            <a href="./cotacao.html" class="btn btn-primary w-100 rounded-0 py-3 d-block d-lg-none mt-3">
-                Obter uma cotação<i class="fa fa-arrow-right ms-2"></i>
-            </a>
-  </div>
-</nav>
-    <!-- Navbar End -->
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header-maquinarios py-5 mb-5">
-      <div class="container py-5">
-        <h1 class="display-3 text-white mb-3 animated slideInDown">
-          Maquinários
-        </h1>
-        <nav aria-label="breadcrumb animated slideInDown">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <span class="text-white">Home</span>
-            </li>
-
-            <li class="breadcrumb-item text-white active" aria-current="page">
-              Maquinários
-            </li>
-          </ol>
-        </nav>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto p-4 p-lg-0">
+        <a href="index.html" class="nav-item nav-link ">Home</a>
+        <a href="about.html" class="nav-item nav-link">Sobre</a>
+        <a href="project.html" class="nav-item nav-link active">Maquinários</a>
+        <a href="contact.html" class="nav-item nav-link">Lojas</a>
       </div>
+      <!-- Botão para desktop -->
+      <a href="./cotacao.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+        Obter uma cotação<i class="fa fa-arrow-right ms-3"></i>
+      </a>
+
+      <!-- Botão para mobile -->
+      <a href="./cotacao.html" class="btn btn-primary w-100 rounded-0 py-3 d-block d-lg-none mt-3">
+        Obter uma cotação<i class="fa fa-arrow-right ms-2"></i>
+      </a>
     </div>
-    <!-- Page Header End -->
+  </nav>
+  <!-- Navbar End -->
 
-    <!-- Projects Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 600px"
-        >
-          <h6 class="text-primary">Força é aqui!!</h6>
-          <h1 class="mb-4">Conheça a nossa frota</h1>
+  <!-- Page Header Start -->
+  <div class="container-fluid page-header-maquinarios py-5 mb-5">
+    <div class="container py-5">
+      <h1 class="display-3 text-white mb-3 animated slideInDown">
+        Maquinários
+      </h1>
+      <nav aria-label="breadcrumb animated slideInDown">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <span class="text-white">Home</span>
+          </li>
+
+          <li class="breadcrumb-item text-white active" aria-current="page">
+            Maquinários
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- Page Header End -->
+
+  <!-- Projects Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
+        <h6 class="text-primary">Força é aqui!!</h6>
+        <h1 class="mb-4">Conheça a nossa frota</h1>
+      </div>
+      <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="col-12 text-center">
+          <ul class="list-inline mb-5" id="portfolio-flters">
+            <li class="mx-2 active" data-filter="*">Todos</li>
+            <li class="mx-2" data-filter=".first">Tratores</li>
+            <li class="mx-2" data-filter=".second">Colheitadeiras</li>
+            <li class="mx-2" data-filter=".retro">Retroescavadeira</li>
+            <li class="mx-2" data-filter=".fourth">Pulverizadores</li>
+            <li class="mx-2" data-filter=".fifth">Plantadeiras</li>
+
+          </ul>
         </div>
-        <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="col-12 text-center">
-            <ul class="list-inline mb-5" id="portfolio-flters">
-              <li class="mx-2 active" data-filter="*">Todos</li>
-              <li class="mx-2" data-filter=".first">Tratores</li>
-              <li class="mx-2" data-filter=".second">Colheitadeiras</li>
-              <li class="mx-2" data-filter=".retro">Retroescavadeira</li>
-              <li class="mx-2" data-filter=".fourth">Pulverizadores</li>
-              <li class="mx-2" data-filter=".fifth">Plantadeiras</li>
+      </div>
 
-            </ul>
-          </div>
-        </div>
-
-        <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
+      <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
         <!-- Card 1: Série 6S - Básico -->
         <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item first" data-wow-delay="0.1s">
           <div class="service-item rounded overflow-hidden" style="height: 100%;">
@@ -201,11 +183,11 @@
                   <span>Peso: 4.500 kg</span>
                 </li>
               </ul>
-                  <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
-                    <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
-                      Fazer cotação
-                    </a>
-                </div>
+              <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
+                <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
+                  Fazer cotação
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -237,10 +219,10 @@
                   <span>Peso: 6.000 kg</span>
                 </li>
               </ul>
-                <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
-                  <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
-                    Fazer cotação
-                  </a>
+              <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
+                <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
+                  Fazer cotação
+                </a>
               </div>
             </div>
           </div>
@@ -273,456 +255,456 @@
                   <span>Peso: 8.500 kg</span>
                 </li>
               </ul>
-                <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
-                  <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
-                    Fazer cotação
-                  </a>
+              <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
+                <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
+                  Fazer cotação
+                </a>
               </div>
             </div>
           </div>
         </div>
 
 
-          <!-- 2 linha de tipos maquinarios -->
-      <!-- Card 1: Série A2 Pro Max -->
-      <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item second" data-wow-delay="0.1s">
-        <div class="service-item rounded overflow-hidden" style="height: 612px;">
-          <div class="d-flex mt-4 justify-content-center">
-            <img class="img-fluid" src="img/colheitadeira-1.svg" alt="Série A2 Pro Max" />
-          </div>
-          <div class="position-relative p-4" style="margin-top: 33px">
-            <h4 class="mb-3">Série A2 Pro Max</h4>
-            <p>Série A2 Pro Max: Duplas rodas e um motor ainda mais potente.</p>
-
-             <ul class="list-unstyled">
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-bolt text-warning me-2"></i>
-                <span>Potência: 320 cv</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-oil-can text-primary me-2"></i>
-                <span>Tanque: 650 L</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-cogs text-success me-2"></i>
-                <span>Transmissão: Hidráulica 20 velocidades</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-ruler-combined text-danger me-2"></i>
-                <span>Peso: 11.000 kg</span>
-              </li>
-            </ul>
-            <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
-              <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
-                Fazer cotação
-              </a>
+        <!-- 2 linha de tipos maquinarios -->
+        <!-- Card 1: Série A2 Pro Max -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item second" data-wow-delay="0.1s">
+          <div class="service-item rounded overflow-hidden" style="height: 612px;">
+            <div class="d-flex mt-4 justify-content-center">
+              <img class="img-fluid" src="img/colheitadeira-1.svg" alt="Série A2 Pro Max" />
             </div>
-          </div>
-        </div>
-      </div>
+            <div class="position-relative p-4" style="margin-top: 33px">
+              <h4 class="mb-3">Série A2 Pro Max</h4>
+              <p>Série A2 Pro Max: Duplas rodas e um motor ainda mais potente.</p>
 
-      <!-- Card 2: Série A2 Flex Ultra -->
-      <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item second" data-wow-delay="0.3s">
-        <div class="service-item rounded overflow-hidden" style="height: 612px; ">
-          <div class="d-flex mt-4 justify-content-center">
-            <img class="img-fluid" src="img/colheitadeira-2.svg" alt="Série A2 Flex Ultra" />
-          </div>
-          <div class="position-relative p-4" style="margin-top: 12px">
-            <h4 class="mb-3">Série A2 Flex Ultra</h4>
-            <p>Série A2 Flex Ultra: Duplas rodas e um motor mais eficiente.</p>
-            <ul class="list-unstyled">
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-bolt text-warning me-2"></i>
-                <span>Potência: 350 cv</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-oil-can text-primary me-2"></i>
-                <span>Tanque: 700 L</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-cogs text-success me-2"></i>
-                <span>Transmissão: Automática 24 velocidades</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-ruler-combined text-danger me-2"></i>
-                <span>Peso: 12.000 kg</span>
-              </li>
-            </ul>
-            <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
-              <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
-                Fazer cotação
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3: Série A2 Terrain X -->
-      <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item second" data-wow-delay="0.5s">
-        <div class="service-item rounded overflow-hidden" style="height: 612px;">
-          <div class="d-flex mt-4 justify-content-center">
-            <img class="img-fluid" src="img/colheitadeira-3.svg" alt="Série A2 Terrain X" />
-          </div>
-          <div class="position-relative p-4" style="margin-top: 4px">
-            <h4 class="mb-3">Série A2 Terrain X</h4>
-            <p>Série A2 Terrain X: Duplas rodas e um motor super potente.</p>
-            <ul class="list-unstyled">
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-bolt text-warning me-2"></i>
-                <span>Potência: 400 cv</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-oil-can text-primary me-2"></i>
-                <span>Tanque: 800 L</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-cogs text-success me-2"></i>
-                <span>Transmissão: Automática 26 velocidades</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-ruler-combined text-danger me-2"></i>
-                <span>Peso: 13.500 kg</span>
-              </li>
-            </ul>
-                <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
-                  <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
-                    Fazer cotação
-                  </a>
+              <ul class="list-unstyled">
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-bolt text-warning me-2"></i>
+                  <span>Potência: 320 cv</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-oil-can text-primary me-2"></i>
+                  <span>Tanque: 650 L</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-cogs text-success me-2"></i>
+                  <span>Transmissão: Hidráulica 20 velocidades</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-ruler-combined text-danger me-2"></i>
+                  <span>Peso: 11.000 kg</span>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
+                <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
+                  Fazer cotação
+                </a>
               </div>
-          </div>
-        </div>
-      </div>
-
-
-          <!-- Retroescavadeira - Série R1 -->
-    <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item retro" data-wow-delay="0.1s">
-      <div class="service-item rounded overflow-hidden" style="height: 612px;">
-        <div class="d-flex mt-4 justify-content-center">
-          <img class="img-fluid" src="img/retroescavadeira-1.svg" alt="Série R1" />
-        </div>
-        <div class="position-relative p-4" >
-          <h4 class="mb-3">Série R1</h4>
-          <p>Série R1: Ideal para pequenas obras, com desempenho e economia.</p>
-          <ul class="list-unstyled">
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-bolt text-warning me-2"></i>
-              <span>Potência: 90 cv</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-oil-can text-primary me-2"></i>
-              <span>Tanque: 120 L</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-cogs text-success me-2"></i>
-              <span>Transmissão: Manual 6 velocidades</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-ruler-combined text-danger me-2"></i>
-              <span>Peso: 4.200 kg</span>
-            </li>
-          </ul>
-          <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
-            <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
-              Fazer cotação
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Retroescavadeira - Série R2 -->
-    <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item retro" data-wow-delay="0.3s">
-      <div class="service-item rounded overflow-hidden"style="height: 612px;">
-        <div class="d-flex mt-4 justify-content-center">
-          <img class="img-fluid" src="img/retroescavadeira-2.svg" alt="Série R2" />
-        </div>
-        <div class="position-relative p-4" style="margin-top: 46.8px">
-          <h4 class="mb-3">Série R2</h4>
-          <p>Série R2: Mais força e versatilidade para médias operações.</p>
-          <ul class="list-unstyled">
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-bolt text-warning me-2"></i>
-              <span>Potência: 120 cv</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-oil-can text-primary me-2"></i>
-              <span>Tanque: 180 L</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-cogs text-success me-2"></i>
-              <span>Transmissão: Semi-auto 8 velocidades</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-ruler-combined text-danger me-2"></i>
-              <span>Peso: 6.000 kg</span>
-            </li>
-          </ul>
-          <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
-            <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
-              Fazer cotação
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Retroescavadeira - Série R3 -->
-    <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item retro" data-wow-delay="0.5s">
-      <div class="service-item rounded overflow-hidden" style="height: 612px;">
-        <div class="d-flex mt-4 justify-content-center">
-          <img class="img-fluid" src="img/retroescavadeira-3.svg" alt="Série R3" />
-        </div>
-        <div class="position-relative p-4" style="margin-top: 39.5px">
-          <h4 class="mb-3">Série R3</h4>
-          <p>Série R3: Alto desempenho para grandes projetos e terrenos difíceis.</p>
-          <ul class="list-unstyled">
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-bolt text-warning me-2"></i>
-              <span>Potência: 160 cv</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-oil-can text-primary me-2"></i>
-              <span>Tanque: 250 L</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-cogs text-success me-2"></i>
-              <span>Transmissão: Automática 10 velocidades</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-ruler-combined text-danger me-2"></i>
-              <span>Peso: 8.000 kg</span>
-            </li>
-          </ul>
-          <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
-            <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
-              Fazer cotação
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-          <!-- Pulverizador - Série P1 -->
-      <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item fourth" data-wow-delay="0.1s">
-        <div class="service-item rounded overflow-hidden" style="height: 612px;">
-          <div class="d-flex mt-4 justify-content-center">
-            <img class="img-fluid" src="img/pulverizador-1.svg" alt="Série P1" />
-          </div>
-          <div class="position-relative p-4" style="margin-top: 40px">
-            <h4 class="mb-3">Série P1</h4>
-            <p>Série P1: Pulverização eficiente para pequenas lavouras.</p>
-            <ul class="list-unstyled">
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-bolt text-warning me-2"></i>
-                <span>Potência: 75 cv</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-oil-can text-primary me-2"></i>
-                <span>Tanque: 800 L</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-cogs text-success me-2"></i>
-                <span>Transmissão: Manual 5 velocidades</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-ruler-combined text-danger me-2"></i>
-                <span>Peso: 2.500 kg</span>
-              </li>
-            </ul>
-            <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
-              <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
-                Fazer cotação
-              </a>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Pulverizador - Série P2 -->
-      <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item fourth" data-wow-delay="0.3s">
-        <div class="service-item rounded overflow-hidden" style="height: 612px;">
-          <div class="d-flex mt-4 justify-content-center">
-            <img class="img-fluid" src="img/pulverizador-2.svg" alt="Série P2" />
-          </div>
-          <div class="position-relative p-4" style="margin-top: 34px">
-            <h4 class="mb-3">Série P2</h4>
-            <p>Série P2: Ideal para médias propriedades, com maior alcance.</p>
-            <ul class="list-unstyled">
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-bolt text-warning me-2"></i>
-                <span>Potência: 110 cv</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-oil-can text-primary me-2"></i>
-                <span>Tanque: 1.200 L</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-cogs text-success me-2"></i>
-                <span>Transmissão: Semi-auto 7 velocidades</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-ruler-combined text-danger me-2"></i>
-                <span>Peso: 3.800 kg</span>
-              </li>
-            </ul>
-            <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
-              <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
-                Fazer cotação
-              </a>
+        <!-- Card 2: Série A2 Flex Ultra -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item second" data-wow-delay="0.3s">
+          <div class="service-item rounded overflow-hidden" style="height: 612px; ">
+            <div class="d-flex mt-4 justify-content-center">
+              <img class="img-fluid" src="img/colheitadeira-2.svg" alt="Série A2 Flex Ultra" />
+            </div>
+            <div class="position-relative p-4" style="margin-top: 12px">
+              <h4 class="mb-3">Série A2 Flex Ultra</h4>
+              <p>Série A2 Flex Ultra: Duplas rodas e um motor mais eficiente.</p>
+              <ul class="list-unstyled">
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-bolt text-warning me-2"></i>
+                  <span>Potência: 350 cv</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-oil-can text-primary me-2"></i>
+                  <span>Tanque: 700 L</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-cogs text-success me-2"></i>
+                  <span>Transmissão: Automática 24 velocidades</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-ruler-combined text-danger me-2"></i>
+                  <span>Peso: 12.000 kg</span>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
+                <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
+                  Fazer cotação
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Pulverizador - Série P3 -->
-      <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item fourth" data-wow-delay="0.5s">
-        <div class="service-item rounded overflow-hidden" style="height: 612px;">
-          <div class="d-flex mt-4 justify-content-center">
-            <img class="img-fluid" src="img/pulverizador-3.svg" alt="Série P3" />
-          </div>
-          <div class="position-relative p-4" style="margin-top: 50px">
-            <h4 class="mb-3">Série P3</h4>
-            <p>Série P3: Máximo desempenho para grandes áreas e operações intensivas.</p>
-            <ul class="list-unstyled">
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-bolt text-warning me-2"></i>
-                <span>Potência: 150 cv</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-oil-can text-primary me-2"></i>
-                <span>Tanque: 1.800 L</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-cogs text-success me-2"></i>
-                <span>Transmissão: Automática 9 velocidades</span>
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <i class="fas fa-ruler-combined text-danger me-2"></i>
-                <span>Peso: 5.200 kg</span>
-              </li>
-            </ul>
-            <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
-              <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
-                Fazer cotação
-              </a>
+        <!-- Card 3: Série A2 Terrain X -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item second" data-wow-delay="0.5s">
+          <div class="service-item rounded overflow-hidden" style="height: 612px;">
+            <div class="d-flex mt-4 justify-content-center">
+              <img class="img-fluid" src="img/colheitadeira-3.svg" alt="Série A2 Terrain X" />
+            </div>
+            <div class="position-relative p-4" style="margin-top: 4px">
+              <h4 class="mb-3">Série A2 Terrain X</h4>
+              <p>Série A2 Terrain X: Duplas rodas e um motor super potente.</p>
+              <ul class="list-unstyled">
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-bolt text-warning me-2"></i>
+                  <span>Potência: 400 cv</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-oil-can text-primary me-2"></i>
+                  <span>Tanque: 800 L</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-cogs text-success me-2"></i>
+                  <span>Transmissão: Automática 26 velocidades</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-ruler-combined text-danger me-2"></i>
+                  <span>Peso: 13.500 kg</span>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
+                <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
+                  Fazer cotação
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-          <!-- Plantadeira - Série PL1 -->
-    <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item fifth" data-wow-delay="0.1s">
-      <div class="service-item rounded overflow-hidden"  style="height: 612px;">
-        <div class="d-flex mt-4 justify-content-center">
-          <img class="img-fluid" src="img/plantadeira-1.svg" alt="Série PL1" />
-        </div>
-        <div class="position-relative p-4" style="margin-top: 32px">
-          <h4 class="mb-3">Série PL1</h4>
-          <p>Série PL1: Plantadeira compacta, ideal para pequenas propriedades.</p>
-          <ul class="list-unstyled">
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-bolt text-warning me-2"></i>
-              <span>Linhas de plantio: 4</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-oil-can text-primary me-2"></i>
-              <span>Capacidade de sementes: 200 kg</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-cogs text-success me-2"></i>
-              <span>Sistema: Mecânico</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-ruler-combined text-danger me-2"></i>
-              <span>Peso: 1.200 kg</span>
-            </li>
-          </ul>
-          <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
-            <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
-              Fazer cotação
-            </a>
+
+        <!-- Retroescavadeira - Série R1 -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item retro" data-wow-delay="0.1s">
+          <div class="service-item rounded overflow-hidden" style="height: 612px;">
+            <div class="d-flex mt-4 justify-content-center">
+              <img class="img-fluid" src="img/retroescavadeira-1.svg" alt="Série R1" />
+            </div>
+            <div class="position-relative p-4">
+              <h4 class="mb-3">Série R1</h4>
+              <p>Série R1: Ideal para pequenas obras, com desempenho e economia.</p>
+              <ul class="list-unstyled">
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-bolt text-warning me-2"></i>
+                  <span>Potência: 90 cv</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-oil-can text-primary me-2"></i>
+                  <span>Tanque: 120 L</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-cogs text-success me-2"></i>
+                  <span>Transmissão: Manual 6 velocidades</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-ruler-combined text-danger me-2"></i>
+                  <span>Peso: 4.200 kg</span>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
+                <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
+                  Fazer cotação
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Plantadeira - Série PL2 -->
-    <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item fifth" data-wow-delay="0.3s">
-      <div class="service-item rounded overflow-hidden"  style="height: 612px;">
-        <div class="d-flex mt-4 justify-content-center">
-          <img class="img-fluid" src="img/plantadeira-2.svg" alt="Série PL2" />
-        </div>
-        <div class="position-relative p-4" style="margin-top: 49px">
-          <h4 class="mb-3">Série PL2</h4>
-          <p>Série PL2: Plantadeira versátil, atende médias propriedades com eficiência.</p>
-          <ul class="list-unstyled">
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-bolt text-warning me-2"></i>
-              <span>Linhas de plantio: 8</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-oil-can text-primary me-2"></i>
-              <span>Capacidade de sementes: 400 kg</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-cogs text-success me-2"></i>
-              <span>Sistema: Semiautomático</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-ruler-combined text-danger me-2"></i>
-              <span>Peso: 2.400 kg</span>
-            </li>
-          </ul>
-          <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
-            <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
-              Fazer cotação
-            </a>
+        <!-- Retroescavadeira - Série R2 -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item retro" data-wow-delay="0.3s">
+          <div class="service-item rounded overflow-hidden" style="height: 612px;">
+            <div class="d-flex mt-4 justify-content-center">
+              <img class="img-fluid" src="img/retroescavadeira-2.svg" alt="Série R2" />
+            </div>
+            <div class="position-relative p-4" style="margin-top: 46.8px">
+              <h4 class="mb-3">Série R2</h4>
+              <p>Série R2: Mais força e versatilidade para médias operações.</p>
+              <ul class="list-unstyled">
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-bolt text-warning me-2"></i>
+                  <span>Potência: 120 cv</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-oil-can text-primary me-2"></i>
+                  <span>Tanque: 180 L</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-cogs text-success me-2"></i>
+                  <span>Transmissão: Semi-auto 8 velocidades</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-ruler-combined text-danger me-2"></i>
+                  <span>Peso: 6.000 kg</span>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
+                <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
+                  Fazer cotação
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Plantadeira - Série PL3 -->
-    <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item fifth" data-wow-delay="0.5s">
-      <div class="service-item rounded overflow-hidden"  style="height: 612px;">
-        <div class="d-flex mt-4 justify-content-center">
-          <img class="img-fluid" src="img/plantadeira-3.svg" alt="Série PL3" />
-        </div>
-        <div class="position-relative p-4" style="margin-top: 50px">
-          <h4 class="mb-3">Série PL3</h4>
-          <p>Série PL3: Alto desempenho e capacidade para grandes propriedades.</p>
-          <ul class="list-unstyled">
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-bolt text-warning me-2"></i>
-              <span>Linhas de plantio: 16</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-oil-can text-primary me-2"></i>
-              <span>Capacidade de sementes: 800 kg</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-cogs text-success me-2"></i>
-              <span>Sistema: Automático com precisão</span>
-            </li>
-            <li class="mb-2 d-flex align-items-center">
-              <i class="fas fa-ruler-combined text-danger me-2"></i>
-              <span>Peso: 4.800 kg</span>
-            </li>
-          </ul>
-          <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
-            <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
-              Fazer cotação
-            </a>
+        <!-- Retroescavadeira - Série R3 -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item retro" data-wow-delay="0.5s">
+          <div class="service-item rounded overflow-hidden" style="height: 612px;">
+            <div class="d-flex mt-4 justify-content-center">
+              <img class="img-fluid" src="img/retroescavadeira-3.svg" alt="Série R3" />
+            </div>
+            <div class="position-relative p-4" style="margin-top: 39.5px">
+              <h4 class="mb-3">Série R3</h4>
+              <p>Série R3: Alto desempenho para grandes projetos e terrenos difíceis.</p>
+              <ul class="list-unstyled">
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-bolt text-warning me-2"></i>
+                  <span>Potência: 160 cv</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-oil-can text-primary me-2"></i>
+                  <span>Tanque: 250 L</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-cogs text-success me-2"></i>
+                  <span>Transmissão: Automática 10 velocidades</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-ruler-combined text-danger me-2"></i>
+                  <span>Peso: 8.000 kg</span>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
+                <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
+                  Fazer cotação
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+
+
+
+        <!-- Pulverizador - Série P1 -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item fourth" data-wow-delay="0.1s">
+          <div class="service-item rounded overflow-hidden" style="height: 612px;">
+            <div class="d-flex mt-4 justify-content-center">
+              <img class="img-fluid" src="img/pulverizador-1.svg" alt="Série P1" />
+            </div>
+            <div class="position-relative p-4" style="margin-top: 40px">
+              <h4 class="mb-3">Série P1</h4>
+              <p>Série P1: Pulverização eficiente para pequenas lavouras.</p>
+              <ul class="list-unstyled">
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-bolt text-warning me-2"></i>
+                  <span>Potência: 75 cv</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-oil-can text-primary me-2"></i>
+                  <span>Tanque: 800 L</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-cogs text-success me-2"></i>
+                  <span>Transmissão: Manual 5 velocidades</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-ruler-combined text-danger me-2"></i>
+                  <span>Peso: 2.500 kg</span>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
+                <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
+                  Fazer cotação
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pulverizador - Série P2 -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item fourth" data-wow-delay="0.3s">
+          <div class="service-item rounded overflow-hidden" style="height: 612px;">
+            <div class="d-flex mt-4 justify-content-center">
+              <img class="img-fluid" src="img/pulverizador-2.svg" alt="Série P2" />
+            </div>
+            <div class="position-relative p-4" style="margin-top: 34px">
+              <h4 class="mb-3">Série P2</h4>
+              <p>Série P2: Ideal para médias propriedades, com maior alcance.</p>
+              <ul class="list-unstyled">
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-bolt text-warning me-2"></i>
+                  <span>Potência: 110 cv</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-oil-can text-primary me-2"></i>
+                  <span>Tanque: 1.200 L</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-cogs text-success me-2"></i>
+                  <span>Transmissão: Semi-auto 7 velocidades</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-ruler-combined text-danger me-2"></i>
+                  <span>Peso: 3.800 kg</span>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
+                <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
+                  Fazer cotação
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pulverizador - Série P3 -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item fourth" data-wow-delay="0.5s">
+          <div class="service-item rounded overflow-hidden" style="height: 612px;">
+            <div class="d-flex mt-4 justify-content-center">
+              <img class="img-fluid" src="img/pulverizador-3.svg" alt="Série P3" />
+            </div>
+            <div class="position-relative p-4" style="margin-top: 50px">
+              <h4 class="mb-3">Série P3</h4>
+              <p>Série P3: Máximo desempenho para grandes áreas e operações intensivas.</p>
+              <ul class="list-unstyled">
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-bolt text-warning me-2"></i>
+                  <span>Potência: 150 cv</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-oil-can text-primary me-2"></i>
+                  <span>Tanque: 1.800 L</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-cogs text-success me-2"></i>
+                  <span>Transmissão: Automática 9 velocidades</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-ruler-combined text-danger me-2"></i>
+                  <span>Peso: 5.200 kg</span>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
+                <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
+                  Fazer cotação
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plantadeira - Série PL1 -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item fifth" data-wow-delay="0.1s">
+          <div class="service-item rounded overflow-hidden" style="height: 612px;">
+            <div class="d-flex mt-4 justify-content-center">
+              <img class="img-fluid" src="img/plantadeira-1.svg" alt="Série PL1" />
+            </div>
+            <div class="position-relative p-4" style="margin-top: 32px">
+              <h4 class="mb-3">Série PL1</h4>
+              <p>Série PL1: Plantadeira compacta, ideal para pequenas propriedades.</p>
+              <ul class="list-unstyled">
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-bolt text-warning me-2"></i>
+                  <span>Linhas de plantio: 4</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-oil-can text-primary me-2"></i>
+                  <span>Capacidade de sementes: 200 kg</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-cogs text-success me-2"></i>
+                  <span>Sistema: Mecânico</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-ruler-combined text-danger me-2"></i>
+                  <span>Peso: 1.200 kg</span>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
+                <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
+                  Fazer cotação
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plantadeira - Série PL2 -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item fifth" data-wow-delay="0.3s">
+          <div class="service-item rounded overflow-hidden" style="height: 612px;">
+            <div class="d-flex mt-4 justify-content-center">
+              <img class="img-fluid" src="img/plantadeira-2.svg" alt="Série PL2" />
+            </div>
+            <div class="position-relative p-4" style="margin-top: 49px">
+              <h4 class="mb-3">Série PL2</h4>
+              <p>Série PL2: Plantadeira versátil, atende médias propriedades com eficiência.</p>
+              <ul class="list-unstyled">
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-bolt text-warning me-2"></i>
+                  <span>Linhas de plantio: 8</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-oil-can text-primary me-2"></i>
+                  <span>Capacidade de sementes: 400 kg</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-cogs text-success me-2"></i>
+                  <span>Sistema: Semiautomático</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-ruler-combined text-danger me-2"></i>
+                  <span>Peso: 2.400 kg</span>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
+                <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
+                  Fazer cotação
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plantadeira - Série PL3 -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp portfolio-item fifth" data-wow-delay="0.5s">
+          <div class="service-item rounded overflow-hidden" style="height: 612px;">
+            <div class="d-flex mt-4 justify-content-center">
+              <img class="img-fluid" src="img/plantadeira-3.svg" alt="Série PL3" />
+            </div>
+            <div class="position-relative p-4" style="margin-top: 50px">
+              <h4 class="mb-3">Série PL3</h4>
+              <p>Série PL3: Alto desempenho e capacidade para grandes propriedades.</p>
+              <ul class="list-unstyled">
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-bolt text-warning me-2"></i>
+                  <span>Linhas de plantio: 16</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-oil-can text-primary me-2"></i>
+                  <span>Capacidade de sementes: 800 kg</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-cogs text-success me-2"></i>
+                  <span>Sistema: Automático com precisão</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <i class="fas fa-ruler-combined text-danger me-2"></i>
+                  <span>Peso: 4.800 kg</span>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center" style="width: 100%; margin-top: 10px;">
+                <a class="btn btn-primary rounded-pill py-1" style="width: 100%;" type="submit" href="./cotacao.html">
+                  Fazer cotação
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-</div>
 
-</div>
-
-        <!-- card 1 
+      <!-- card 1 
         <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
 
          <div class="px-4">
@@ -890,129 +872,115 @@
           </div>
         </div>
       -->
-      </div>
     </div>
-    <!-- Projects End -->
+  </div>
+  <!-- Projects End -->
 
-    <!-- Início do Rodapé -->
-    <div
-      class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <!-- Contato -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-white mb-4">Endereço</h5>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>1233 - Presidente
-              Prudente, São Paulo, BR
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>(18)99232-0208
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>contato@ecoharvest.com.br
-            </p>
-          </div>
+  <!-- Início do Rodapé -->
+  <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <!-- Contato -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-4">Endereço</h5>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>1233 - Presidente
+            Prudente, São Paulo, BR
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i>(18)99232-0208
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-envelope me-3"></i>contato@ecoharvest.com.br
+          </p>
+        </div>
 
-          <!-- Links rápidos -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-white mb-4">Links Rápidos</h5>
-            <a class="btn btn-link" href="/ecoHarvest_2/about.html"
-              >Sobre Nós</a
-            >
-            <a class="btn btn-link" href="/ecoHarvest_2/contact.html"
-              >Contato</a
-            >
-            <a class="btn btn-link" href="/ecoHarvest_2/project.html">Maquinarios</a>
-          </div>
+        <!-- Links rápidos -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-4">Links Rápidos</h5>
+          <a class="btn btn-link" href="./about.html">Sobre Nós</a>
+          <a class="btn btn-link" href="./project.html">Maquinários</a>
+          <a class="btn btn-link" href="./contact.html">Lojas</a>
+          <a class="btn btn-link" href="./cotacao.html">Cotação</a>
 
-          <!-- Galeria -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-white mb-4">Galeria de Projetos</h5>
-            <div class="row g-2">
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back0.jpg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back4.jpg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back3.jpg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back5.jpg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back10.jpg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back12.jpg" alt="" />
-              </div>
+
+        </div>
+
+        <!-- Galeria -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-4">Galeria de Projetos</h5>
+          <div class="row g-2">
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back0.jpg" alt="" />
             </div>
-          </div>
-
-          <!-- Newsletter -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-white mb-4">Receba Novidades</h5>
-            <p>
-              Inscreva-se e fique por dentro das últimas tendências do
-              agronegócio sustentável.
-            </p>
-            <div class="position-relative mx-auto" style="max-width: 400px">
-              <input
-                class="form-control border-0 w-100 py-3 ps-4 pe-5"
-                type="text"
-                placeholder="Seu e-mail"
-              />
-              <button
-                type="button"
-                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-              >
-               <a href="./cadastro.html" class="text-white">Inscrever-se</a>
-              </button>
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back4.jpg" alt="" />
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back3.jpg" alt="" />
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back5.jpg" alt="" />
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back10.jpg" alt="" />
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back12.jpg" alt="" />
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Créditos -->
-      <div class="container">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a href="#">EcoHarvest</a> - Todos os direitos reservados.
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              Desenvolvido por <a href="#">Syntex</a><br />
-              Distribuído por: <a href="#" target="_blank">Syntex</a>
-            </div>
+        <!-- Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-4">Receba Novidades</h5>
+          <p>
+            Inscreva-se e fique por dentro das últimas tendências do
+            agronegócio sustentável.
+          </p>
+          <div class="position-relative mx-auto" style="max-width: 400px">
+            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Seu e-mail" />
+            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+              <a href="./cadastro.html" class="text-white">Inscrever-se</a>
+            </button>
           </div>
         </div>
       </div>
     </div>
-    <!-- Fim do Rodapé -->
 
-    <!-- Back to Top -->
-    <a
-      href="#"
-      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
+    <!-- Créditos -->
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a href="#">EcoHarvest</a> - Todos os direitos reservados.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            Desenvolvido por <a href="#">Syntex</a><br />
+            Distribuído por: <a href="#" target="_blank">Syntex</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim do Rodapé -->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>

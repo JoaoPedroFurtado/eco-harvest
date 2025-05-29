@@ -1,525 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>EcoHarvest</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+<head>
+  <meta charset="utf-8" />
+  <title>EcoHarvest</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+    rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-  <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-border text-primary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-      >
-        <span class="sr-only">Loading...</span>
-      </div>
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
-    <!-- Spinner End -->
+  </div>
+  <!-- Spinner End -->
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark p-0">
-      <div class="row gx-0 d-none d-lg-flex">
-        <div class="col-lg-7 px-5 text-start">
-          <div class="h-100 d-inline-flex align-items-center me-4">
-            <small class="fa fa-map-marker-alt text-primary me-2"></small>
-            <small>1233 Presidente Prudente, São Paulo, BR</small>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center">
-            <small class="far fa-clock text-primary me-2"></small>
-            <small>Seg - Sex: 09.00 AM - 18.00 PM</small>
-          </div>
+  <!-- Topbar Start -->
+  <div class="container-fluid bg-dark p-0">
+    <div class="row gx-0 d-none d-lg-flex">
+      <div class="col-lg-7 px-5 text-start">
+        <div class="h-100 d-inline-flex align-items-center me-4">
+          <small class="fa fa-map-marker-alt text-primary me-2"></small>
+          <small>1233 Presidente Prudente, São Paulo, BR</small>
         </div>
-        <div class="col-lg-5 px-5 text-end">
-          <div class="h-100 d-inline-flex align-items-center me-4 py-2">
-            <small class="fa fa-phone-alt text-primary me-2"></small>
-            <small>+018 3909 6789</small>
-          </div>
+        <div class="h-100 d-inline-flex align-items-center">
+          <small class="far fa-clock text-primary me-2"></small>
+          <small>Seg - Sex: 09.00 AM - 18.00 PM</small>
+        </div>
+      </div>
+      <div class="col-lg-5 px-5 text-end">
+        <div class="h-100 d-inline-flex align-items-center me-4 py-2">
+          <small class="fa fa-phone-alt text-primary me-2"></small>
+          <small>+018 3909 6789</small>
         </div>
       </div>
     </div>
-    <!-- Topbar End -->
+  </div>
+  <!-- Topbar End -->
 
-   <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-  <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-    <h2 class="m-0 text-primary">EcoHarvest</h2>
-  </a>
-
-  <!-- Ícone de usuário com dropdown -->
-  <div class="dropdown d-flex align-items-center me-auto ms-2">
-    <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="fa fa-user fa-lg text-primary"></i>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+      <h2 class="m-0 text-primary">EcoHarvest</h2>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-      <li><span class="dropdown-item-text">Olá, João</span></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="./sobreuser.html">Meu perfil</a></li>
-      <li><a class="dropdown-item" href="./login.html">Sair</a></li>
-    </ul>
+
+    <!-- Ícone de usuário com dropdown -->
+    <div class="dropdown d-flex align-items-center me-auto ms-2">
+      <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="userDropdown"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa fa-user fa-lg text-primary"></i>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+        <li><span class="dropdown-item-text">Olá, João</span></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="./sobreuser.html">Meu perfil</a></li>
+        <li><a class="dropdown-item" href="./login.html">Sair</a></li>
+      </ul>
+    </div>
+
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto p-4 p-lg-0">
+        <a href="index.html" class="nav-item nav-link ">Home</a>
+        <a href="about.html" class="nav-item nav-link active">Sobre</a>
+        <a href="project.html" class="nav-item nav-link">Maquinários</a>
+        <a href="contact.html" class="nav-item nav-link">Lojas</a>
+      </div>
+      <!-- Botão para desktop -->
+      <a href="./cotacao.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+        Obter uma cotação<i class="fa fa-arrow-right ms-3"></i>
+      </a>
+
+      <!-- Botão para mobile -->
+      <a href="./cotacao.html" class="btn btn-primary w-100 rounded-0 py-3 d-block d-lg-none mt-3">
+        Obter uma cotação<i class="fa fa-arrow-right ms-2"></i>
+      </a>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Page Header Start -->
+  <div class="container-fluid page-header-sobre py-5 mb-5">
+    <div class="container py-5">
+      <h1 class="display-3 text-white mb-3 animated slideInDown">Sobre</h1>
+      <nav aria-label="breadcrumb animated slideInDown">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <span class="text-white">Home</span>
+          </li>
+          <li class="breadcrumb-item text-white active" aria-current="page">
+            Sobre
+          </li>
+        </ol>
+      </nav>
+    </div>
   </div>
+  <!-- Page Header End -->
 
-  <button
-    type="button"
-    class="navbar-toggler me-4"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarCollapse"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+      <div class="row position-relative ">
+        <div class="col-lg-7 about-img " style="background-image: url(img/back4.jpg)">
+        </div>
 
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <div class="navbar-nav ms-auto p-4 p-lg-0">
-      <a href="index.html" class="nav-item nav-link ">Home</a>
-      <a href="about.html" class="nav-item nav-link active">Sobre</a>
-      <a href="project.html" class="nav-item nav-link">Maquinários</a>
-      <a href="contact.html" class="nav-item nav-link">Lojas</a>
+        <div class="col-lg-7">
+          <h2>Eco Harvest</h2>
+          <div class="our-story">
+            <h4 class="text-dark">Desde 2015</h4>
+            <h3 class="text-dark">Nossa História</h3>
+            <p class="text-dark">
+              A EcoHarvest nasceu com o propósito de impulsionar o agronegócio
+              por meio de máquinas agrícolas modernas, duráveis e acessíveis.
+              Com foco no produtor rural, desenvolvemos soluções que aumentam
+              a produtividade no campo.
+            </p>
+            <ul>
+              <li>
+                <i class="bi bi-check-circle text-success"></i>
+                <span class="text-dark">Equipamentos de alto desempenho para diversas
+                  culturas</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle text-success"></i>
+                <span class="text-dark">Suporte técnico especializado e atendimento próximo</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle text-success"></i>
+                <span class="text-dark">Compromisso com a inovação e sustentabilidade no
+                  campo</span>
+              </li>
+            </ul>
+            <p class="text-dark">
+              Com a confiança de agricultores de todo o Brasil, seguimos
+              evoluindo e cultivando parcerias sólidas. Acreditamos que
+              máquinas eficientes são parte essencial de uma colheita de
+              sucesso.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Botão para desktop -->
-            <a href="./cotacao.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
-                Obter uma cotação<i class="fa fa-arrow-right ms-3"></i>
-            </a>
+  </section>
+  <!-- End About Section -->
 
-            <!-- Botão para mobile -->
-            <a href="./cotacao.html" class="btn btn-primary w-100 rounded-0 py-3 d-block d-lg-none mt-3">
-                Obter uma cotação<i class="fa fa-arrow-right ms-2"></i>
-            </a>
+  <!-- Feature Start -->
+  <div class="container-xxl" style="margin-top: 80px; margin-bottom: 80px">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+          <div class="d-flex align-items-center mb-4">
+            <div class="btn-lg-square bg-primary rounded-circle me-3">
+              <i class="fa fa-users text-white"></i>
+            </div>
+            <h1 class="mb-0" data-toggle="counter-up">3453</h1>
+          </div>
+          <h5 class="mb-3 ">Clientes Satisfeitos</h5>
+          <span class="text-dark">Mais de 3 mil produtores confiam na qualidade EcoHarvest no
+            campo.</span>
+        </div>
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+          <div class="d-flex align-items-center mb-4">
+            <div class="btn-lg-square bg-primary rounded-circle me-3">
+              <i class="fa fa-check text-white"></i>
+            </div>
+            <h1 class="mb-0" data-toggle="counter-up">4234</h1>
+          </div>
+          <h5 class="mb-3">Máquinas Entregues</h5>
+          <span class="text-dark">Equipamentos prontos para transformar a produção agrícola.</span>
+        </div>
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+          <div class="d-flex align-items-center mb-4">
+            <div class="btn-lg-square bg-primary rounded-circle me-3">
+              <i class="fa fa-award text-white"></i>
+            </div>
+            <h1 class="mb-0" data-toggle="counter-up">3123</h1>
+          </div>
+          <h5 class="mb-3">Reconhecimentos</h5>
+          <span class="text-dark">Prêmios que refletem nosso compromisso com a excelência no
+            campo.</span>
+        </div>
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+          <div class="d-flex align-items-center mb-4">
+            <div class="btn-lg-square bg-primary rounded-circle me-3">
+              <i class="fa fa-users-cog text-white"></i>
+            </div>
+            <h1 class="mb-0" data-toggle="counter-up">1831</h1>
+          </div>
+          <h5 class="mb-3">Especialistas no Campo</h5>
+          <span class="text-dark">Equipe preparada para oferecer as melhores soluções
+            agrícolas.</span>
+        </div>
+      </div>
+    </div>
   </div>
-</nav>
-    <!-- Navbar End -->
+  <!-- Feature End -->
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header-sobre py-5 mb-5">
-      <div class="container py-5">
-        <h1 class="display-3 text-white mb-3 animated slideInDown">Sobre</h1>
-        <nav aria-label="breadcrumb animated slideInDown">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <span class="text-white">Home</span>
-            </li>
-            <li class="breadcrumb-item text-white active" aria-current="page">
-              Sobre
-            </li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-    <!-- Page Header End -->
-
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-        <div class="row position-relative ">
-          <div
-            class="col-lg-7 about-img "
-            style="background-image: url(img/back4.jpg)"
-          >
-        </div>
-
-          <div class="col-lg-7">
-            <h2>Eco Harvest</h2>
-            <div class="our-story">
-              <h4 class="text-dark">Desde 2015</h4>
-              <h3 class="text-dark">Nossa História</h3>
-              <p class="text-dark"> 
-                A EcoHarvest nasceu com o propósito de impulsionar o agronegócio
-                por meio de máquinas agrícolas modernas, duráveis e acessíveis.
-                Com foco no produtor rural, desenvolvemos soluções que aumentam
-                a produtividade no campo.
-              </p>
-              <ul>
-                <li>
-                  <i class="bi bi-check-circle text-success"></i>
-                  <span
-                    class="text-dark">Equipamentos de alto desempenho para diversas
-                    culturas</span
-                  >
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-success"></i>
-                  <span
-                    class="text-dark">Suporte técnico especializado e atendimento próximo</span
-                  >
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-success"></i>
-                  <span
-                    class="text-dark">Compromisso com a inovação e sustentabilidade no
-                    campo</span
-                  >
-                </li>
-              </ul>
-              <p class="text-dark">
-                Com a confiança de agricultores de todo o Brasil, seguimos
-                evoluindo e cultivando parcerias sólidas. Acreditamos que
-                máquinas eficientes são parte essencial de uma colheita de
-                sucesso.
-              </p>
-            </div>
+  <!-- Feature Ajustada -->
+  <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container about px-lg-0">
+      <div class="row g-0 mx-lg-0">
+        <!-- Imagem -->
+        <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px">
+          <div class="position-relative h-100">
+            <img class="position-absolute img-fluid w-100 h-100" src="img/img-back4.jpg" style="object-fit: cover"
+              alt="Trator em campo" />
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End About Section -->
 
-    <!-- Feature Start -->
-    <div class="container-xxl" style="margin-top: 80px; margin-bottom: 80px">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-            <div class="d-flex align-items-center mb-4">
-              <div class="btn-lg-square bg-primary rounded-circle me-3">
-                <i class="fa fa-users text-white"></i>
-              </div>
-              <h1 class="mb-0" data-toggle="counter-up">3453</h1>
-            </div>
-            <h5 class="mb-3 ">Clientes Satisfeitos</h5>
-            <span
-              class="text-dark">Mais de 3 mil produtores confiam na qualidade EcoHarvest no
-              campo.</span
-            >
-          </div>
-          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-            <div class="d-flex align-items-center mb-4">
-              <div class="btn-lg-square bg-primary rounded-circle me-3">
-                <i class="fa fa-check text-white"></i>
-              </div>
-              <h1 class="mb-0" data-toggle="counter-up">4234</h1>
-            </div>
-            <h5 class="mb-3">Máquinas Entregues</h5>
-            <span
-               class="text-dark">Equipamentos prontos para transformar a produção agrícola.</span
-            >
-          </div>
-          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-            <div class="d-flex align-items-center mb-4">
-              <div class="btn-lg-square bg-primary rounded-circle me-3">
-                <i class="fa fa-award text-white"></i>
-              </div>
-              <h1 class="mb-0" data-toggle="counter-up">3123</h1>
-            </div>
-            <h5 class="mb-3">Reconhecimentos</h5>
-            <span
-               class="text-dark">Prêmios que refletem nosso compromisso com a excelência no
-              campo.</span
-            >
-          </div>
-          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-            <div class="d-flex align-items-center mb-4">
-              <div class="btn-lg-square bg-primary rounded-circle me-3">
-                <i class="fa fa-users-cog text-white"></i>
-              </div>
-              <h1 class="mb-0" data-toggle="counter-up">1831</h1>
-            </div>
-            <h5 class="mb-3">Especialistas no Campo</h5>
-            <span
-               class="text-dark">Equipe preparada para oferecer as melhores soluções
-              agrícolas.</span
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Feature End -->
-
-    <!-- Feature Ajustada -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-      <div class="container about px-lg-0">
-        <div class="row g-0 mx-lg-0">
-          <!-- Imagem -->
-          <div
-            class="col-lg-6 ps-lg-0 wow fadeIn"
-            data-wow-delay="0.1s"
-            style="min-height: 400px"
-          >
-            <div class="position-relative h-100">
-              <img
-                class="position-absolute img-fluid w-100 h-100"
-                src="img/img-back4.jpg"
-                style="object-fit: cover"
-                alt="Trator em campo"
-              />
-            </div>
-          </div>
-
-          <!-- Texto -->
-          <div
-            class="col-lg-6 about-text py-5 wow fadeIn"
-            data-wow-delay="0.5s"
-          >
-            <div class="p-lg-5 pe-lg-0">
-              <h6 class="text-primary">Quem somos</h6>
-              <h1 class="mb-4">
-                Mais de 25 anos de inovação no setor agrícola
-              </h1>
-              <p  class="text-dark">
-                Fornecemos máquinas agrícolas de alta performance, projetadas
-                para aumentar sua produtividade com robustez e tecnologia de
-                ponta. Estamos ao lado do produtor em todas as etapas da
-                lavoura.
-              </p>
-              <p  class="text-dark">
-                <i class="fa fa-check-circle text-primary me-3"></i>Potência e
-                eficiência no campo
-              </p>
-              <p  class="text-dark">
-                <i class="fa fa-check-circle text-primary me-3"></i>Tecnologia
-                de ponta para o agronegócio
-              </p>
-              <p  class="text-dark">
-                <i class="fa fa-check-circle text-primary me-3"></i>Soluções
-                robustas para alta produtividade
-              </p>
-              <div
-                class="mt-4 p-3 bg-white border-start border-4 border-primary shadow-sm rounded"
-              >
-                <strong class="text-dark"
-                  >Nosso compromisso é com o crescimento sustentável do seu
-                  negócio.</strong
-                >
-              </div>
+        <!-- Texto -->
+        <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+          <div class="p-lg-5 pe-lg-0">
+            <h6 class="text-primary">Quem somos</h6>
+            <h1 class="mb-4">
+              Mais de 25 anos de inovação no setor agrícola
+            </h1>
+            <p class="text-dark">
+              Fornecemos máquinas agrícolas de alta performance, projetadas
+              para aumentar sua produtividade com robustez e tecnologia de
+              ponta. Estamos ao lado do produtor em todas as etapas da
+              lavoura.
+            </p>
+            <p class="text-dark">
+              <i class="fa fa-check-circle text-primary me-3"></i>Potência e
+              eficiência no campo
+            </p>
+            <p class="text-dark">
+              <i class="fa fa-check-circle text-primary me-3"></i>Tecnologia
+              de ponta para o agronegócio
+            </p>
+            <p class="text-dark">
+              <i class="fa fa-check-circle text-primary me-3"></i>Soluções
+              robustas para alta produtividade
+            </p>
+            <div class="mt-4 p-3 bg-white border-start border-4 border-primary shadow-sm rounded">
+              <strong class="text-dark">Nosso compromisso é com o crescimento sustentável do seu
+                negócio.</strong>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Feature End -->
+  </div>
+  <!-- Feature End -->
 
-    <!-- Início da Equipe -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 600px"
-        >
-          <h6 class="text-primary">Nossa Equipe</h6>
-          <h1 class="mb-4">Pessoas que fazem a diferença no campo</h1>
-          <p class="text-muted">
-            Conheça os profissionais que colocam paixão, conhecimento e
-            dedicação em cada solução oferecida pela EcoHarvest.
+  <!-- Início da Equipe -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
+        <h6 class="text-primary">Nossa Equipe</h6>
+        <h1 class="mb-4">Pessoas que fazem a diferença no campo</h1>
+        <p class="text-muted">
+          Conheça os profissionais que colocam paixão, conhecimento e
+          dedicação em cada solução oferecida pela EcoHarvest.
+        </p>
+      </div>
+      <div class="row g-4">
+        <!-- Membro 1 -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item rounded overflow-hidden shadow-sm">
+            <img class="img-fluid w-100" src="img/team-v1.svg" alt="André Oliveira" />
+            <div class="p-4 text-center">
+              <h5 class="mb-1">André Oliveira</h5>
+              <span class="text-muted ">Diretor Técnico</span>
+              <p class="mt-3 mb-0 small text-dark">
+                Com mais de 20 anos de experiência em engenharia agrícola,
+                André lidera projetos que transformam tecnologia em
+                produtividade.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Membro 2 -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="team-item rounded overflow-hidden shadow-sm">
+            <img class="img-fluid w-100" src="img/team-v2.svg" alt="Fernanda Lima" />
+            <div class="p-4 text-center">
+              <h5 class="mb-1">Fernando Lima</h5>
+              <span class="text-muted">Consultor Agrícola</span>
+              <p class="mt-3 mb-0 small text-dark">
+                Especialista em agronegócio sustentável, Fernando orienta
+                nossos clientes com foco em soluções práticas e eficientes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Membro 3 -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="team-item rounded overflow-hidden shadow-sm">
+            <img class="img-fluid w-100" src="img/team-v3.svg" alt="Rafael Souza" />
+            <div class="p-4 text-center">
+              <h5 class="mb-1">Rafael Souza</h5>
+              <span class="text-muted">Engenheiro de Campo</span>
+              <p class="mt-3 mb-0 small text-dark">
+                Responsável por testes em campo e acompanhamento técnico,
+                Rafael garante o máximo desempenho dos nossos equipamentos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim da Equipe -->
+
+  <!-- Início do Rodapé -->
+  <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <!-- Contato -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-4">Endereço</h5>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>1233 - Presidente
+            Prudente, São Paulo, BR
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i>(18)99232-0208
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-envelope me-3"></i>contato@ecoharvest.com.br
           </p>
         </div>
-        <div class="row g-4">
-          <!-- Membro 1 -->
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded overflow-hidden shadow-sm">
-              <img
-                class="img-fluid w-100"
-                src="img/team-v1.svg"
-                alt="André Oliveira"
-              />
-              <div class="p-4 text-center">
-                <h5 class="mb-1">André Oliveira</h5>
-                <span class="text-muted ">Diretor Técnico</span>
-                <p class="mt-3 mb-0 small text-dark" >
-                  Com mais de 20 anos de experiência em engenharia agrícola,
-                  André lidera projetos que transformam tecnologia em
-                  produtividade.
-                </p>
-              </div>
+
+        <!-- Links rápidos -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-4">Links Rápidos</h5>
+          <a class="btn btn-link" href="./about.html">Sobre Nós</a>
+          <a class="btn btn-link" href="./project.html">Maquinários</a>
+          <a class="btn btn-link" href="./contact.html">Lojas</a>
+          <a class="btn btn-link" href="./cotacao.html">Cotação</a>
+
+
+        </div>
+
+        <!-- Galeria -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-4">Galeria de Projetos</h5>
+          <div class="row g-2">
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back0.jpg" alt="" />
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back4.jpg" alt="" />
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back3.jpg" alt="" />
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back5.jpg" alt="" />
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back10.jpg" alt="" />
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded" src="img/back12.jpg" alt="" />
             </div>
           </div>
+        </div>
 
-          <!-- Membro 2 -->
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="team-item rounded overflow-hidden shadow-sm">
-              <img
-                class="img-fluid w-100"
-                src="img/team-v2.svg"
-                alt="Fernanda Lima"
-              />
-              <div class="p-4 text-center">
-                <h5 class="mb-1">Fernando Lima</h5>
-                <span class="text-muted">Consultor Agrícola</span>
-                <p class="mt-3 mb-0 small text-dark">
-                  Especialista em agronegócio sustentável, Fernando orienta
-                  nossos clientes com foco em soluções práticas e eficientes.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Membro 3 -->
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="team-item rounded overflow-hidden shadow-sm">
-              <img
-                class="img-fluid w-100"
-                src="img/team-v3.svg"
-                alt="Rafael Souza"
-              />
-              <div class="p-4 text-center">
-                <h5 class="mb-1">Rafael Souza</h5>
-                <span class="text-muted">Engenheiro de Campo</span>
-                <p class="mt-3 mb-0 small text-dark">
-                  Responsável por testes em campo e acompanhamento técnico,
-                  Rafael garante o máximo desempenho dos nossos equipamentos.
-                </p>
-              </div>
-            </div>
+        <!-- Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-4">Receba Novidades</h5>
+          <p>
+            Inscreva-se e fique por dentro das últimas tendências do
+            agronegócio sustentável.
+          </p>
+          <div class="position-relative mx-auto" style="max-width: 400px">
+            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Seu e-mail" />
+            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+              <a href="./cadastro.html" class="text-white">Inscrever-se</a>
+            </button>
           </div>
         </div>
       </div>
     </div>
-    <!-- Fim da Equipe -->
 
-     <!-- Início do Rodapé -->
-    <div
-      class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <!-- Contato -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-white mb-4">Endereço</h5>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>1233 - Presidente
-              Prudente, São Paulo, BR
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>(18)99232-0208
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>contato@ecoharvest.com.br
-            </p>
+    <!-- Créditos -->
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a href="#">EcoHarvest</a> - Todos os direitos reservados.
           </div>
-
-          <!-- Links rápidos -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-white mb-4">Links Rápidos</h5>
-            <a class="btn btn-link" href="/ecoHarvest_2/about.html"
-              >Sobre Nós</a
-            >
-            <a class="btn btn-link" href="/ecoHarvest_2/contact.html"
-              >Contato</a
-            >
-            <a class="btn btn-link" href="/ecoHarvest_2/project.html">Maquinarios</a>
-          </div>
-
-          <!-- Galeria -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-white mb-4">Galeria de Projetos</h5>
-            <div class="row g-2">
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back0.jpg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back4.jpg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back3.jpg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back5.jpg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back10.jpg" alt="" />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid rounded" src="img/back12.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-
-          <!-- Newsletter -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-white mb-4">Receba Novidades</h5>
-            <p>
-              Inscreva-se e fique por dentro das últimas tendências do
-              agronegócio sustentável.
-            </p>
-            <div class="position-relative mx-auto" style="max-width: 400px">
-              <input
-                class="form-control border-0 w-100 py-3 ps-4 pe-5"
-                type="text"
-                placeholder="Seu e-mail"
-              />
-              <button
-                type="button"
-                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-              >
-                <a href="./cadastro.html" class="text-white">Inscrever-se</a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Créditos -->
-      <div class="container">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a href="#">EcoHarvest</a> - Todos os direitos reservados.
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              Desenvolvido por <a href="#">Syntex</a><br />
-              Distribuído por: <a href="#" target="_blank">Syntex</a>
-            </div>
+          <div class="col-md-6 text-center text-md-end">
+            Desenvolvido por <a href="#">Syntex</a><br />
+            Distribuído por: <a href="#" target="_blank">Syntex</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Fim do Rodapé -->
+  </div>
+  <!-- Fim do Rodapé -->
 
-    <!-- Back to Top -->
-    <a
-      href="#"
-      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
